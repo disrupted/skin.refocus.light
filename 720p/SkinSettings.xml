@@ -100,7 +100,7 @@
 				</control>
 			</control>
 		</control>
-<!---HOME SCREEN------>	
+<!---HOME SCREEN------>
 		<control type="grouplist" id="100">
 			<posx>340</posx>
 			<posy>93</posy>
@@ -120,6 +120,13 @@
 				<onclick>ActivateWindow(61)</onclick>
 				<include>button_Settings</include>
 			</control>
+			<!--home menu categories configuration-->
+			<control type="button" id="102">
+				<label>$LOCALIZE[32901]</label>
+				<onfocus>Skin.SetString(SubMenu,Categories)</onfocus>
+				<onclick>ActivateWindow(345)</onclick>
+				<include>button_Settings</include>
+			</control>
 			<!--backgrounds configuration-->
 			<control type="button" id="103">
 				<label>$LOCALIZE[32002]</label>
@@ -134,7 +141,7 @@
 				<onclick>ActivateWindow(1160)</onclick>
 				<include>button_Settings</include>
 				<visible>Skin.HasSetting(devel)</visible>
-			</control>			
+			</control>
 			<!--time-->
 			<control type="radiobutton" id="105">
 				<label>$LOCALIZE[31907]</label>
@@ -240,8 +247,8 @@
 				<selected>Skin.HasSetting(removelogos.enable)</selected>
 				<include>button_Settings</include>
 			</control>
-			
-			
+
+
 			<!--studio and network logos
 			<control type="radiobutton" id="617">
 				<label>$LOCALIZE[32101]</label>
@@ -272,7 +279,7 @@
 				<visible>Skin.HasSetting(artistlogo.enable)</visible>
 			</control>
 		</control>
-<!---VIEW SETTINGS------>					
+<!---VIEW SETTINGS------>
 		<control type="grouplist" id="700">
 			<posx>340</posx>
 			<posy>93</posy>
@@ -640,7 +647,7 @@
 				<visible>Skin.HasSetting(background.opacity.enabled)</visible>
 			</control>
 		</control>
-<!---SKIN CREDITS------>					
+<!---SKIN CREDITS------>
 		<control type="group" id="1000">
 			<posx>370</posx>
 			<posy>85</posy>
