@@ -16,15 +16,6 @@
 				<aspectratio align="left">keep</aspectratio>
 				<texture fallback="empty">$VAR[flag_Studio]</texture>
 			</control>
-			<control type="image" id="99299">
-				<posx>10</posx>
-                <posy>-15</posy>
-				<width>128</width>
-				<height>64</height>
-				<aspectratio align="left">keep</aspectratio>
-				<texture fallback="empty">$VAR[flag_Studio_alt]</texture>
-				<visible>StringCompare(Control.GetLabel(99199),empty)</visible>
-			</control>
             <control type="image">
                 <posx>132</posx>
 				<width>128</width>
@@ -58,11 +49,11 @@
 				<aspectratio align="center">keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Path]logo.png</texture>
 			</control>
-			<!---info--->	
+			<!---info--->
 			<control type="group">
 				<visible>!Container.Content(addons)</visible>
 				<control type="label">
-				<posx>270</posx>                    
+				<posx>270</posx>
 				<width>730</width>
 					<label>$VAR[global_Title]</label>
 					<font>titleSpecial</font>
@@ -103,7 +94,7 @@
 			<include>toggle_Menu</include>
 			<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !SubString(Container.FolderPath,plugin.video.hulu)</visible>
 			<include condition="Window.IsVisible(videolibrary)">PortraitFanart</include>
-		</control>	
+		</control>
 		<!---window menu shade-->
 		<control type="image">
 			<include>screen_Dimensions</include>
@@ -181,5 +172,5 @@
 				</control>
 			</control>
 		</focusedlayout>
-	</include>    
+	</include>
 </includes>

@@ -19,7 +19,7 @@
 		</control>
 		<control type="group">
 			<posx>19</posx>
-			<posy>75</posy>		
+			<posy>75</posy>
 			<control type="image">
 				<width>762</width>
 				<include>dialog_Separator</include>
@@ -34,7 +34,7 @@
 				<width>762</width>
 				<include>dialog_Separator</include>
 			</control>
-		<!--button area------>	
+		<!--button area------>
 			<control type="grouplist" id="100">
 				<width>225</width>
 				<height>480</height>
@@ -120,7 +120,7 @@
 				</control>
 			</control>
 
-		<!---control area------>	
+		<!---control area------>
 			<control type="group">
 			<!--global submenu-->
 				<control type="grouplist" id="200">
@@ -388,7 +388,7 @@
 						<width>557</width>
 						<onclick>Skin.ToggleSetting(moviesmenu.watchlist)</onclick>
 						<selected>Skin.HasSetting(moviesmenu.watchlist)</selected>
-						<enable>!Skin.HasSetting(watchlist.disable</enable>
+						<enable>!Skin.HasSetting(watchlist.disable)</enable>
 						<include>dialog_Radio</include>
 					</control>
 					<!--recent movies-->
@@ -475,7 +475,7 @@
 						<selected>Skin.HasSetting(moviesmenu.actors)</selected>
 						<include>dialog_Radio</include>
 					</control>
-					
+
 				</control>
 			<!--tv shows submenu-->
 				<control type="grouplist" id="200">
@@ -712,7 +712,7 @@
 						<enable>!Skin.HasSetting(homemenu.videos)</enable>
 						<visible>Skin.HasSetting(favourites.global)</visible>
 					</control>
-					
+
 				</control>
 			<!--pictures submenu-->
 				<control type="grouplist" id="200">

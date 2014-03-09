@@ -662,7 +662,6 @@
 				<autoscroll time="1000" delay="5000" repeat="5000">true</autoscroll>
 				<textcolor>Color1</textcolor>
 				<font>smallAlt</font>
-				<include>textBox</include>
 			</control>
 		</control>
 <!---IMAGES------>

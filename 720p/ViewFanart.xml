@@ -34,7 +34,7 @@
 				<fadetime>fadetime_Fanart</fadetime>
 				<include>fadeinout</include>
 				<visible>Control.IsVisible(47) + Window.IsActive(movieinformation)</visible>
-			</control>			
+			</control>
 			<control type="image">
 				<include>screen_Dimensions</include>
 				<aspectratio align="left">stretch</aspectratio>
@@ -51,7 +51,7 @@
 		<control type="group">
 			<posy>500</posy>
 			<include>transition_Container</include>
-			<include>infoDialogHide</include>		
+			<include>infoDialogHide</include>
 			<animation effect="slide" start="0,600" end="0,0" easing="Out" tween="Quadratic" time="350">Visible</animation>
 			<animation effect="slide" start="0,0" end="0,600" easing="Out" tween="Quadratic" time="350">Hidden</animation>
 			<visible>[[Control.IsVisible(47) + Control.HasFocus(8000)] | Control.IsVisible(47)] + !ControlGroup(6000).HasFocus()</visible>
@@ -104,9 +104,9 @@
 				<control type="label">
 					<posy>40</posy>
 					<width>780</width>
-					<label>$INFO[ListItem.Season,$LOCALIZE[20373] , • ]$INFO[ListItem.Episode,$LOCALIZE[20359] ]</label>
+					<label>$INFO[ListItem.Season,$LOCALIZE[20373] , ï¿½ ]$INFO[ListItem.Episode,$LOCALIZE[20359] ]</label>
 					<font>descriptionbig</font>
-					<align>left</align>	
+					<align>left</align>
 					<textcolor>Color4</textcolor>
 				</control>
 				<control type="grouplist">
@@ -133,7 +133,7 @@
 					<height>68</height>
 					<width>910</width>
 					<label>$VAR[global_Plot.Condition]</label>
-					<textcolor>Color3</textcolor>					
+					<textcolor>Color3</textcolor>
 					<font>descriptionbig</font>
 					<include>description_OSD</include>
 				</control>
@@ -144,15 +144,14 @@
 				    <control type="image">
 					    <width>119</width>
 					    <height>42</height>
-					    <include>flag_Res</include>	
 				    </control>
-			    </control>				
+			    </control>
 			    <control type="image">
 				<posx>913</posx>
 				<posy>110</posy>
 					<include>overlay_UnWatched</include>
 				</control>
-			</control>			
-		</control>	
+			</control>
+		</control>
 	</include>
-</includes>	
+</includes>

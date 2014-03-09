@@ -1017,15 +1017,6 @@
 					<aspectratio align="center">keep</aspectratio>
 					<texture fallback="empty">$VAR[flag_Studio]</texture>
 				</control>
-				<control type="image" id="9929">
-					<posx>159</posx>
-					<posy>465</posy>
-					<width>128</width>
-					<height>64</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture fallback="empty">$VAR[flag_Studio_alt]</texture>
-					<visible>StringCompare(Control.GetLabel(9919),empty)</visible>
-				</control>
 			</control>
 		</control>
 		<control type="group">
@@ -1040,7 +1031,6 @@
 				<height>64</height>
 				<aspectratio align="center">keep</aspectratio>
 				<colordiffuse>Color7</colordiffuse>
-				<include>flag_Label</include>
 			</control>
 		</control>
 	</include>

@@ -13,10 +13,8 @@
 		<include>view_IconSquare</include>
 		<include>view_List</include>
 		<include>view_SlideSquare</include>
-		<include>view_Thumbs</include>
 		<include>view_IconSquare3</include>
 		<include>info_AddonList</include>
-		<include>info_AddonThumbs</include>
 		<include>info_SlideAddons</include>
 	</controls>
 </window>
