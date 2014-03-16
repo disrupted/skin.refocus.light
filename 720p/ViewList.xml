@@ -223,8 +223,8 @@
 			<posy>90</posy>
 			<width>625</width>
 			<height>612</height>
-			<onup>50</onup>
-			<ondown>50</ondown>
+			<onup>501</onup>
+			<ondown>501</ondown>
 			<onleft>6000</onleft>
 			<onright>70</onright>
 			<pagecontrol>70</pagecontrol>
