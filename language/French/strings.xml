@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
 <string id="31000">
-[COLOR=Color2][B][UPPERCASE]Skin Designer and Developer[/UPPERCASE][/B][/COLOR]
+[COLOR=Color2][B][UPPERCASE]Développeur et Designer du Skin[/UPPERCASE][/B][/COLOR]
 Jeroen
 
-[B][COLOR=Color2]THANKS[/COLOR][/B]
-Team-XBMC for creating the most advanced and versatile mediacenter available. Thanks to the wonderful XBMC community for their help, skins, plugins, scripts and applications that make the XBMC experience even better. And thank YOU for using reFocus!
+[B][COLOR=Color2]Remerciements[/COLOR][/B]
+La Team-XBMC pour avoir créé le meilleur media center disponible. Merci également à la merveilleuse communauté XBMC pour leur aide, les skins, les plugins, les scripts & applications qui font d'XBMC une expérience incroyable. Et meci à VOUS d'utiliser reFocus !
 
-[B][COLOR=Color2]TRANSLATION[/COLOR][/B]
-MaDDoGo, tonybeccar (Spanish), Rafal Wójcik (Polish), hst, otcho (German), epoke (Korean), Galefury (Romanian)
+[B][COLOR=Color2]Traduction[/COLOR][/B]
+MaDDoGo, tonybeccar (Spanish), Rafal Wójcik (Polish), hst, otcho (German), epoke (Korean), Galefury (Romanian), mcmjau (French)
 
-[B][COLOR=Color2]AVAILABILITY[/COLOR][/B]
-Compiled reFocus builds are available on the google code page [B]code.google.com/p/xbmc-focus/[/B]
-For more information visit the Focus section at [B]forum.xbmc.org[/B]
+[B][COLOR=Color2]Disponibilité[/COLOR][/B]
+Retrouvez les dernières versions de reFocus sur notre page Google Code [B]code.google.com/p/xbmc-focus/[/B]
+Pour plus d'informations, visitez la section reFocus sur [B]forum.xbmc.org[/B]
 
-[B][COLOR=Color2]FINAL NOTE[/COLOR][/B]
-Please consider supporting the development of XBMC by making a donation.
+[B][COLOR=Color2]Notes[/COLOR][/B]
+Si vous souhaitez contribuer au développement d'XBMC, pensez à faire un don.
 [B]xbmc.org/contribute/donate[/B]
 </string>
 
@@ -34,7 +34,7 @@ Please consider supporting the development of XBMC by making a donation.
 <string id="31014">Miniatures</string>
 <string id="31015">Param. de vues</string>
 <string id="31016">Fanart</string>
-<string id="31017">Age</string>	
+<string id="31017">Âge</string>	
 <string id="31018">-</string>
 <string id="31019">Thumb</string>
 <string id="31020">-</string>
@@ -48,7 +48,7 @@ Please consider supporting the development of XBMC by making a donation.
 <string id="31028">Vidéo en arrière-plan</string>
 <string id="31029">Visualisation en arrière-plan</string>
 <string id="31030">Menu d'accueil</string>
-<string id="31031">personnaliser le menu d'accueil</string>
+<string id="31031">Personnaliser le menu d'Accueil</string>
 <string id="31032">-</string>
 <string id="31033">Smart Playlist</string>
 <string id="31034">-</string>
@@ -154,14 +154,14 @@ Please consider supporting the development of XBMC by making a donation.
 <string id="31129">Télécharger les bannières</string>
 <string id="31130">Télécharger les logos</string>
 <string id="31131">Télécharger les Extrafanarts</string>
-<string id="31132">utiliser les extrafanarts dans la vue gallerie</string>
+<string id="31132">Utiliser les extrafanarts dans la vue gallerie</string>
 
 <string id="31900">Tout afficher</string>
 <string id="31901">Mode fichiers</string>
 <string id="31902">Groupes disponibles</string>
 <string id="31903">Chaînes cachées</string>
 <string id="31904">Chaînes groupées</string>
-<string id="31905">Unflatten</string>
+<string id="31905">Rétablir</string>
 <string id="31906">-</string>
 <string id="31907">Afficher le temps</string>
 <string id="31908">-</string>
@@ -228,7 +228,7 @@ Please consider supporting the development of XBMC by making a donation.
 
 
 <string id="31966">Utiliser les fanarts pour la météo</string>
-<string id="31967">chemin pour les fanarts météo</string>
+<string id="31967">Chemin pour les fanarts météo</string>
 <string id="31968">[COLOR=Color2]Informations[/COLOR] système</string>
 <string id="31969">[COLOR=Color2]Gestionnaire[/COLOR] de fichiers</string>
 <string id="31970">Nouveaux albums</string>
@@ -278,6 +278,9 @@ Please consider supporting the development of XBMC by making a donation.
 <!--BIG-->
 <string id="31999">Afficher la date/heure originale</string>
 
+<!--Artistslideshow-->
+<string id="32001">Utiliser l'Add-on ArtistSlideShow</string>
+
 <!--Backspace to Home-->
 <string id="32000">Touche Backspace pour retourner à l'accueil</string>
 
@@ -287,8 +290,8 @@ Please consider supporting the development of XBMC by making a donation.
 <!--Backgrounds-->
 <string id="32002">Personnaliser les fonds d'écrans</string>
 <string id="32003">Choisir le fond d'ecran</string>
-<string id="32004">choisir le dossier des fonds d'ecran</string>
-<string id="32005">reinitialiser</string>
+<string id="32004">Choisir le dossier des fonds d'ecran</string>
+<string id="32005">Réinitialiser</string>
 <string id="32006">Utiliser les fonds d'ecran basés sur les conditions climatiques actuelles</string>
 <string id="32007">Choisir le dossier des fonds d'ecran basés sur les conditions climatiques actuelles</string>
 <string id="32008">Global</string>
@@ -311,22 +314,23 @@ Please consider supporting the development of XBMC by making a donation.
 <string id="32017">Lancer un genre au hasard</string>
 
 <!--date-->
-<string id="32018">Afficher la date de couleur blanche dur le menu d'accueil</string>
+<string id="32018">Afficher la date de couleur blanche sur le menu d'accueil</string>
 
 <!--double row banner view-->
 <string id="32019">Bannières sur 2 colonnes</string>
 
-<!--tv netowork logos-->
+<!--tv network logos-->
 <string id="32020">Afficher les Logos de chaines TV (Networks)</string>
+<string id="32103">Supprimer les Logos de chaines TV pendant la visualitation</string>-->
 
 <!--poster banner view-->
-<string id="32021">Bannières + posters</string>
+<string id="32021">Bannières + Posters</string>
 
 <!--tv show status-->
 <string id="32022">Terminée</string>
 
 <!--xperience1080 OSD-->
-<string id="32023">Activer l'OSD xperience1080</string>
+<string id="32023">Activer l'OSD Xperience1080</string>
 
 <!--opacity-->
 <string id="32024">Paramètres d'opacité des fonds d'écran</string>
@@ -342,6 +346,8 @@ Please consider supporting the development of XBMC by making a donation.
 
 <!--OSD-->
 <string id="32030">OSD</string>
+<string id="32602">Afficher les Cleararts</string>
+<string id="32606">Afficher les Logos</string>
 
 <!--Chapters-->
 <string id="32031">Afficher les informations de chapitres lorsque l'OSD est en pause</string>
@@ -354,5 +360,18 @@ Please consider supporting the development of XBMC by making a donation.
 
 <!--OSD-->
 <string id="32034">Afficher la barre de progression dans l'OSDxperience1080</string>
+
+<!--menuSelect-->
+<string id="32500">Désactiver le fondu du pointeur sur le menu d'accueil</string>
+
+<!--Home Menu-->
+<string id="32300">Désactiver l'ombre sur le menu d'accueil</string>
+
+<!--Homescreen Categories-->
+<string id="32901">Modifier les éléments du menu d'accueil</string>
+
+<!--alternate watched icons-->
+<string id="32400">Activer les Overlays de medias "Non vu" </string>
+
 
 </strings>
