@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window id="132">
-	<defaultcontrol always="true">3</defaultcontrol>
+	<defaultcontrol always="true">20</defaultcontrol>
 	<include>dialogOpen</include>
 	<coordinates>
 		<system>1</system>
@@ -37,7 +37,7 @@
 						<include>dialog_Separator</include>
 					</control>
 					<!--content picker-->
-					<control type="spincontrolex" id="3">
+					<control type="spincontrolex" id="20">
 						<!--important-->
 						<posy>0</posy>
 						<!---->
@@ -46,7 +46,7 @@
 						<font>-</font>
 						<onleft>-</onleft>
 						<onup>9001</onup>
-						<ondown>4</ondown>
+						<ondown>21</ondown>
 						<texturefocus border="3">dialogs/list-focus.png</texturefocus>
 						<texturenofocus border="3">dialogs/list-nofocus.png</texturenofocus>
 						<include>dialog_Spin</include>
@@ -57,8 +57,8 @@
 						<height>36</height>
 						<textcolor>Color4</textcolor>	
 						<font>small</font>
-						<label>$INFO[Control.GetLabel(3)]</label>
-						<visible>!Control.HasFocus(3)</visible>
+						<label>$INFO[Control.GetLabel(20)]</label>
+						<visible>!Control.HasFocus(20)</visible>
 					</control>
 					<control type="label">
 						<posx>10</posx>
@@ -66,15 +66,15 @@
 						<height>36</height>
 						<textcolor>Color1</textcolor>	
 						<font>small</font>
-						<label>$INFO[Control.GetLabel(3)]</label>
-						<visible>Control.HasFocus(3)</visible>
+						<label>$INFO[Control.GetLabel(20)]</label>
+						<visible>Control.HasFocus(20)</visible>
 					</control>
 				</control>
 			</control>
 			<!---scrapers--->
 			<control type="group" id="9004">
 				<posy>95</posy>
-				<visible>!SubString(Control.GetLabel(3),$LOCALIZE[231])</visible>
+				<visible>!SubString(Control.GetLabel(20),$LOCALIZE[231])</visible>
 				<control type="label">
 					<posx>14</posx>
 					<width>613</width>
@@ -88,13 +88,13 @@
 					<width>613</width>
 					<include>dialog_Separator</include>
 				</control>
-				<control type="list" id="4">
+				<control type="list" id="21">
 					<posy>40</posy>
 					<width>613</width>
 					<height>120</height>
 					<onleft>-</onleft>
 					<onright>-</onright>
-					<onup>3</onup>
+					<onup>20</onup>
 					<ondown>5</ondown>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime tween="Cubic" easing="Out">200</scrolltime>
@@ -118,19 +118,19 @@
 						<control type="image">
 							<width>613</width>
 							<include>dialog_CommonListFocus</include>
-							<visible>Control.HasFocus(4)</visible>
+							<visible>Control.HasFocus(21)</visible>
 						</control>
 						<control type="label">
 							<width>613</width>
 							<info>ListItem.Label</info>
 							<include>dialog_CommonListItem</include>
-							<visible>!Control.HasFocus(4)</visible>
+							<visible>!Control.HasFocus(21)</visible>
 						</control>
 						<control type="label">
 							<width>613</width>
 							<info>ListItem.Label</info>
 							<include>dialog_CommonListItemFocus</include>
-							<visible>Control.HasFocus(4)</visible>
+							<visible>Control.HasFocus(21)</visible>
 						</control>
 					</focusedlayout>
 				</control>
@@ -178,7 +178,7 @@
 			<posx>34</posx>
 			<posy>567</posy>
 			<!--settings-->
-			<control type="button" id="6">
+			<control type="button" id="22">
 				<label>5</label>
 				<onleft>29</onleft>
 				<onright>28</onright>
@@ -190,7 +190,7 @@
 			<control type="button" id="28">
 				<posx>333</posx>
 				<label>186</label>
-				<onleft>6</onleft>
+				<onleft>22</onleft>
 				<onright>29</onright>
 				<onup>5</onup>
 				<ondown>9003</ondown>
@@ -201,7 +201,7 @@
 				<posx>463</posx>
 				<label>222</label>
 				<onleft>28</onleft>
-				<onright>6</onright>
+				<onright>22</onright>
 				<onup>5</onup>
 				<ondown>9003</ondown>
 				<include>dialog_Button</include>
