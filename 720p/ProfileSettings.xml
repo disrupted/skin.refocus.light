@@ -10,33 +10,85 @@
 	<controls>
 		<control type="image">
 			<width>600</width>
-			<height>422</height>
+			<height>442</height>
 			<include>dialogWindow</include>
 		</control>
-		<control type="label" id="1000">
+		<control type="label" id="2">
 			<width>532</width>
 			<include>dialog_Windowtitle</include>
 		</control>
 		<control type="group">
 			<posx>19</posx>
-			<control type="image" id="2">
+			<control type="image">
+				<top>75</top>
+				<width>563</width>
+				<include>dialog_Separator</include>
+			</control>
+			<control type="image" id="101">
 				<description>profile image</description>
-				<posy>70</posy>
+				<top>75</top>
 				<width>150</width>
 				<height>150</height>
 				<align>left</align>
 				<aspectratio>stretch</aspectratio>
 				<texture>unknown-user.png</texture>
-				<visible>false</visible>
 			</control>
 			<control type="image">
-				<posy>75</posy>
+				<top>225</top>
 				<width>563</width>
 				<include>dialog_Separator</include>
 			</control>
+			<control type="image">
+				<left>150</left>
+				<top>76</top>
+				<height>149</height>
+				<include>dialog_Separator-y</include>
+			</control>
+			<control type="label">
+				<top>85</top>
+				<left>175</left>
+				<width>363</width>
+				<height>36</height>
+				<label>Profile Name:</label>
+				<font>smallerCaps</font>
+				<include>dialog_CommonListItem</include>
+			</control>
+			<control type="label" id="102">
+				<description>profile name value</description>
+				<top>105</top>
+				<left>175</left>
+				<width>363</width>
+				<height>36</height>
+				<align>left</align>
+				<font>smallAlt</font>
+				<scroll>true</scroll>
+				<include>dialog_CommonListItem</include>
+			</control>
+			<control type="label">
+				<top>155</top>
+				<left>175</left>
+				<width>363</width>
+				<height>36</height>
+				<label>Profile Directory:</label>
+				<font>smallerCaps</font>
+				<include>dialog_CommonListItem</include>
+			</control>
+			<control type="label" id="103">
+				<description>profile directory value</description>
+				<top>175</top>
+				<left>175</left>
+				<width>363</width>
+				<height>36</height>
+				<align>left</align>
+				<font>smallAlt</font>
+				<scroll>true</scroll>
+				<include>dialog_CommonListItem</include>
+			</control>
+					
+					
 			<control type="grouplist" id="5">
 				<description>control area</description>
-				<posy>75</posy>
+				<posy>225</posy>
 				<width>563</width>
 				<height>240</height>
 				<itemgap>0</itemgap>
@@ -59,7 +111,8 @@
 		</control>
 		<control type="group" id="9001">
 			<posx>34</posx>
-			<posy>345</posy>
+			<!-- <posy>345</posy> -->
+			<posy>365</posy>
 			<!--ok-->
 			<control type="button" id="28">
 				<posx>280</posx>
