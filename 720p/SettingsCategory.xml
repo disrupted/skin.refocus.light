@@ -32,6 +32,10 @@
 			<include>transition_Container</include>
 		</control>
 		<!--defaults-->
+		<control type="sliderex" id="13">
+			<description>Default Slider</description>
+			<include>dialog_Slider</include>
+		</control>
 		<control type="button" id="7">
 			<include>button_Settings</include>
 		</control>

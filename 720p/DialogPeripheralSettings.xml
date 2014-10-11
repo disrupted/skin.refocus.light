@@ -28,13 +28,6 @@
 					<width>613</width>
 					<include>dialog_Separator</include>
 				</control>
-				<!--no settings-->
-				<control type="label" id="3">
-					<posy>7</posy>
-					<width>582</width>
-					<label>$LOCALIZE[35004]</label>
-					<include>dialog_Line</include>
-				</control>
 				<control type="grouplist" id="5">
 					<width>613</width>
 					<height>490</height>
@@ -53,7 +46,7 @@
 			</control>
 		</control>
 	<!--default controls-->
-		<control type="sliderex" id="10">
+		<control type="sliderex" id="13">
 			<include>dialog_Slider</include>
 		</control>
 		<control type="button" id="7">

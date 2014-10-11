@@ -47,7 +47,7 @@
 		<control type="spincontrolex" id="9">
 			<include>dialog_Spin</include>
 		</control>
-		<control type="sliderex" id="10">
+		<control type="sliderex" id="13">
 			<include>dialog_Slider</include>
 		</control>
 		<control type="edit" id="12">
