@@ -4,30 +4,30 @@
 	<include>dialogOpen</include>
 	<coordinates>
 		<system>1</system>
-		<posx>215</posx>
+		<posx>150</posx>
 		<posy>60</posy>
 	</coordinates>
 	<controls>
 		<control type="group">
 			<visible>!Window.IsActive(yesnodialog) + !Window.IsActive(addonsettings)</visible>
 			<control type="image">
-				<width>850</width>
+				<width>980</width>
 				<height>600</height>
 				<include>dialogWindow</include>
 			</control>
 			<control type="label" id="1">
-				<width>782</width>
+				<width>912</width>
 				<label>$INFO[ListItem.Property(Addon.Name)]</label>
 				<include>dialog_Windowtitle</include>
 			</control>
 			<control type="image">
-				<posx>631</posx>
+				<posx>761</posx>
 				<posy>76</posy>
 				<height>199</height>
 				<include>dialog_Separator-y</include>
 			</control>
 			<control type="image">
-				<posx>632</posx>
+				<posx>762</posx>
 				<posy>75</posy>
 				<width>200</width>
 				<height>200</height>
@@ -38,22 +38,22 @@
 				<posx>19</posx>
 				<posy>75</posy>
 				<control type="image">
-					<width>813</width>
+					<width>943</width>
 					<include>dialog_Separator</include>
 				</control>
 				<control type="image">
-					<posx>613</posx>
+					<posx>743</posx>
 					<posy>199</posy>
-					<width>200</width>
+					<width>330</width>
 					<include>dialog_Separator</include>
 				</control>
 				<control type="image">
 					<posy>435</posy>
-					<width>813</width>
+					<width>943</width>
 					<include>dialog_Separator</include>
 				</control>
 				<control type="list" id="100">
-					<width>612</width>
+					<width>742</width>
 					<height>305</height>
 					<onleft>-</onleft>
 					<onright>-</onright>
@@ -61,21 +61,21 @@
 					<ondown>100</ondown>
 					<itemlayout height="40">
 						<control type="image">
-							<width>612</width>
+							<width>742</width>
 							<height>40</height>
 							<font>smallerCaps</font>
 							<include>dialog_CommonList</include>
 						</control>
 						<control type="label">
-							<width>532</width>
+							<width>662</width>
 							<height>36</height>
 							<label>$INFO[ListItem.Label]</label>
 							<font>smallerCaps</font>
 							<include>dialog_CommonListItem</include>
 						</control>
 						<control type="label">
-							<posx>595</posx>
-							<width>550</width>
+							<posx>725</posx>
+							<width>680</width>
 							<height>36</height>
 							<align>right</align>
 							<label fallback="231">$INFO[ListItem.Label2]</label>
@@ -86,19 +86,19 @@
 					</itemlayout>
 					<focusedlayout height="40">
 						<control type="image">
-							<width>612</width>
+							<width>742</width>
 							<include>dialog_CommonList</include>
 						</control>
 						<control type="label">
-							<width>532</width>
+							<width>662</width>
 							<height>36</height>
 							<label>$INFO[ListItem.Label]</label>
 							<font>smallerCaps</font>
 							<include>dialog_CommonListItem</include>
 						</control>
 						<control type="label">
-							<posx>595</posx>
-							<width>550</width>
+							<posx>725</posx>
+							<width>680</width>
 							<height>36</height>
 							<align>right</align>
 							<label fallback="231">$INFO[ListItem.Label2]</label>
@@ -137,10 +137,10 @@
 				</control>
 				<!--description-->
 				<control type="group">
-					<posx>15</posx>	
+					<posx>15</posx>
 					<posy>213</posy>
 					<control type="textbox" id="400">
-						<width>795</width>
+						<width>925</width>
 						<height>195</height>
 						<label>$INFO[ListItem.Property(Addon.Description)]</label>
 						<font>smallAlt</font>
@@ -148,7 +148,7 @@
 						<visible>IsEmpty(ListItem.Property(Addon.broken))</visible>
 					</control>
 					<control type="textbox" id="400">
-						<width>660</width>
+						<width>790</width>
 						<height>145</height>
 						<label>$INFO[ListItem.Property(Addon.Description)]</label>
 						<font>smallAlt</font>
@@ -161,7 +161,7 @@
 					<posy>370</posy>
 					<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
 					<control type="image">
-						<width>813</width>
+						<width>943</width>
 						<include>dialog_Separator</include>
 					</control>
 					<control type="image">
@@ -207,6 +207,12 @@
 				<control type="button" id="8">
 					<posx>399</posx>
 					<label>$LOCALIZE[24069]</label>
+					<include>dialog_Button</include>
+				</control>
+				<!--launch-->
+				<control type="button" id="12">
+					<label>518</label>
+					<description>Launch Addon Button</description>
 					<include>dialog_Button</include>
 				</control>
 				<!--uninstall-->
