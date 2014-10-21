@@ -51,7 +51,7 @@
 				</control>
 			</control>
 			<!--value-->
-			<control type="button" id="17">
+			<control type="edit" id="17">
 				<posx>34</posx>
 				<posy>170</posy>
 				<width>322</width>

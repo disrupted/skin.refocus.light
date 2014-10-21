@@ -39,7 +39,7 @@
 				<include>dialog_Spin</include>
 			</control>
 			<!--server name-->
-			<control type="button" id="11">
+			<control type="edit" id="11">
 				<posy>40</posy>
 				<width>523</width>
 				<onup>10</onup>
@@ -73,7 +73,7 @@
 				</control>
 			</control>
 			<!--remote path-->
-			<control type="button" id="16">
+			<control type="edit" id="16">
 				<posy>80</posy>
 				<width>563</width>
 				<label>-</label>
@@ -84,7 +84,7 @@
 				<include>dialog_Button-list</include>
 			</control>
 			<!--port-->
-			<control type="button" id="13">
+			<control type="edit" id="13">
 				<posy>120</posy>
 				<width>563</width>
 				<label>$LOCALIZE[1013]</label>
@@ -95,7 +95,7 @@
 				<include>dialog_Button-list</include>
 			</control>
 			<!--username-->
-			<control type="button" id="14">
+			<control type="edit" id="14">
 				<posy>160</posy>
 				<width>563</width>
 				<label>$LOCALIZE[1014]</label>
@@ -106,7 +106,7 @@
 				<include>dialog_Button-list</include>
 			</control>
 			<!--password-->
-			<control type="button" id="15">
+			<control type="edit" id="15">
 				<posy>200</posy>
 				<width>563</width>
 				<label>$LOCALIZE[15052]</label>
