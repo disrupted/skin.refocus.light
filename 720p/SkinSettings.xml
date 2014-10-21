@@ -475,13 +475,13 @@
 				<include>button_Settings</include>
 			</control>
 			<!-- Startup Splash Screen -->
-			<control type="radiobutton" id="905">
+			<!-- <control type="radiobutton" id="905">
 				<label>Remove reFocus-Logo Splash screen on startup</label>
 				<onclick>Skin.ToggleSetting(startup.splash)</onclick>
 				<selected>!Skin.HasSetting(startup.splash)</selected>
 				<include>button_Settings</include>
 				<visible>Skin.HasSetting(devel)</visible>
-			</control>
+			</control> -->
 		</control>
 <!---SKIN CREDITS------>
 		<control type="group" id="1000">
