@@ -35,7 +35,7 @@
 				<height>40</height>
 				<texture border="10,0,10,0">dialogs/textFieldFocus.png</texture>
 			</control>
-			<control type="label" id="310">
+			<control type="edit" id="312">
 				<description>Edit Text</description>
 				<posx>44</posx>
 				<posy>73</posy>
