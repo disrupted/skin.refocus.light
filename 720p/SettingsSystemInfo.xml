@@ -124,8 +124,8 @@
 			<control type="image">
 				<posx>185</posx>
 				<posy>580</posy>
-				<width>128</width>
-				<texture>logos/xbmclogo.png</texture>
+				<width>120</width>
+				<texture>logos/kodi-logo.png</texture>
 				<colordiffuse>Color1</colordiffuse>
 				<aspectratio>keep</aspectratio>
 				<include>transition_Container</include>
