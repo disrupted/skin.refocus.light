@@ -122,11 +122,10 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>185</posx>
-				<posy>580</posy>
-				<width>120</width>
+				<posx>90</posx>
+				<posy>525</posy>
+				<width>224</width>
 				<texture>logos/kodi-logo.png</texture>
-				<colordiffuse>Color1</colordiffuse>
 				<aspectratio>keep</aspectratio>
 				<include>transition_Container</include>
 			</control>
