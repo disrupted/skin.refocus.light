@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window id="12">
-	<defaultcontrol>888</defaultcontrol>
+	<defaultcontrol>3</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>global_Background</include>
