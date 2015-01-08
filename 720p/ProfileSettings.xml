@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window id="130">
-	<defaultcontrol>1</defaultcontrol>
 	<include>dialogOpen</include>
 	<coordinates>
 		<system>1</system>
