@@ -8,7 +8,7 @@
 	</include>
 	<include name="controls_Music">
 		<control type="group">
-			<visible>![Window.IsActive(visualisationpresetlist) | Window.IsActive(script-XBMC_Lyrics-main.xml)]</visible>
+			<visible>![Window.IsActive(visualisationpresetlist) | Window.IsActive(script-cu-lrclyrics-main.xml)]</visible>
 			<control type="group" id="600">
 				<posx>514</posx>
 				<posy>180</posy>
