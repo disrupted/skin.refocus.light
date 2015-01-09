@@ -627,22 +627,6 @@
 						<onclick>SetFocus(5411)</onclick>
 						<onright>30</onright>
 						<onup>410</onup>
-						<ondown>412</ondown>
-						<include>button_Menu</include>
-					</control>
-				</control>
-				<!--banners poster-->
-				<control type="group">
-					<width>220</width>
-					<height>42</height>
-					<visible>Container.Content(tvshows) + !SubString(Container.FolderPath,plugin://)</visible>
-					<control type="button" id="412">
-						<label>$LOCALIZE[32021]</label>
-						<onclick>Container.SetViewMode(54111)</onclick>
-						<onclick>SetFocus(1)</onclick>
-						<onclick>SetFocus(54111)</onclick>
-						<onright>30</onright>
-						<onup>411</onup>
 						<ondown>413</ondown>
 						<include>button_Menu</include>
 					</control>
@@ -658,7 +642,7 @@
 						<onclick>SetFocus(1)</onclick>
 						<onclick>SetFocus(54)</onclick>
 						<onright>30</onright>
-						<onup>412</onup>
+						<onup>411</onup>
 						<ondown>414</ondown>
 						<include>button_Menu</include>
 					</control>

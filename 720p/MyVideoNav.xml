@@ -21,7 +21,6 @@
 		<include>view_Banner</include>
 		<include>view_BannerWide</include>
 		<include>view_BannerDoubleRow</include>
-		<include>view_BannerPoster</include>
 
 	<!---TRIGGER------>
 		<control type="button" id="8000">
@@ -475,7 +474,7 @@
 				<control type="textbox">
 					<posy>60</posy>
 					<width>960</width>
-					<height>142</height>
+					<height>144</height>
 					<label>$VAR[global_Plot.Condition]</label>
 					<font>descriptionbig</font>
 					<include>description_Small</include>
