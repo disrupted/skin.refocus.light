@@ -25,7 +25,6 @@
 					<label>$VAR[global_Info]</label>
 					<font>titleSmallest</font>
 					<include>info_Sub</include>
-					<!--<visible>!SubString(Container.FolderPath,plugin)</visible>-->
 				</control>
 				<control type="label">
 					<posy>70</posy>
