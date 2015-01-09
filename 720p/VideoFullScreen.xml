@@ -8,7 +8,7 @@
 			<posy>5</posy>
 			<control type="image" id="1">
 				<width>1270</width>
-				<height>127</height>
+				<height>142</height>
 				<texture border="4">views/column_Single.png</texture>
 				<colordiffuse>Color5</colordiffuse>
 			</control>
@@ -34,9 +34,9 @@
 				</control>
 				<!--line 3-->
 				<control type="label" id="12">
-					<posy>85</posy>
+					<posy>70</posy>
 					<width>1260</width>
-					<height>40</height>
+					<height>60</height>
 					<!-- <label>-</label> -->
 					<textcolor>Color1</textcolor>
 					<font>smallerCaps</font>
