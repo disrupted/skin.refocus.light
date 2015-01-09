@@ -244,7 +244,7 @@
 		<value condition="SubString(Container.FolderPath,musicdb://recentlyplayedalbums/)">$LOCALIZE[31941]</value>
 	</variable>
 	<variable name="window_Title.System">
-		<value condition="Window.IsActive(settings)">xbmc [COLOR=Color2]$LOCALIZE[10004][/COLOR]</value>
+		<value condition="Window.IsActive(settings)">Kodi [COLOR=Color2]$LOCALIZE[10004][/COLOR]</value>
 		<value condition="Window.IsActive(systeminfo)">$LOCALIZE[31968]</value>
 		<value condition="Window.IsActive(profiles)">$LOCALIZE[5] [COLOR=Color2]$LOCALIZE[13200][/COLOR]</value>
 		<value condition="Window.IsActive(appearancesettings)">$LOCALIZE[480] [COLOR=Color2]$LOCALIZE[5][/COLOR]</value>
