@@ -1,0 +1,87 @@
+<window id="5537">
+    <defaultcontrol>4323</defaultcontrol>
+    <coordinates>
+        <left>590</left>
+        <top>220</top>
+        <left>0</left>
+        <top>0</top>
+    </coordinates>
+    <controls>
+        <control type="group" id="1998">
+            <include>dialogOpen</include>
+            <control type="image" id="1999">
+                <width>310</width>
+                <height>396</height>
+                <texture border="20">dialogs/button_Menu.png</texture>
+            </control>
+            <control type="image">
+                <posx>4</posx>
+                <posy>18</posy>
+                <width>302</width>
+                <include>dialog_Separator</include>
+            </control>
+            <control type="list" id="4323">
+                <left>4</left>
+                <top>18</top>
+                <width>302</width>
+                <height>380</height>
+                <pagecontrol>-</pagecontrol>
+                <scrolltime>150</scrolltime>
+                <visible>true</visible>    
+                <itemlayout height="40">
+                    <left>0</left>
+                    <top>0</top>
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>302</width>
+                        <height>40</height>
+                        <texture border="3">dialogs/list-nofocus.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>302</width>
+                        <height>40</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                        <textcolor>Color4</textcolor>
+                        <font>small</font>
+                        <label>-</label>
+                    </control>				
+                </itemlayout>
+                <focusedlayout height="40">
+                    <left>0</left>
+                    <top>0</top>
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>302</width>
+                        <height>40</height>
+                        <texture border="3">dialogs/list-nofocus.png</texture>
+                    </control>	
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>302</width>
+                        <height>40</height>
+                        <texture border="3">dialogs/list-focus.png</texture>
+                    </control>	
+                    <control type="label">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>302</width>
+                        <height>40</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                        <textcolor>Color1</textcolor>
+                        <font>small</font>
+                        <label>-</label>
+                    </control>					
+                </focusedlayout>
+            </control>					
+        </control>
+    </controls>
+</window> 
