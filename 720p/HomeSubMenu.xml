@@ -367,19 +367,24 @@
 						<onclick>ActivateWindow(settings)</onclick>
 					</item>
 					<item id="2">
+						<label>OpenELEC</label>
+						<onclick>RunAddon(service.openelec.settings)</onclick>
+						<visible>System.HasAddon(service.openelec.settings)</visible>
+					</item>
+					<item id="3">
 						<label>$LOCALIZE[130]</label>
 						<onclick>ActivateWindow(SystemInfo)</onclick>
 					</item>
-					<item id="3">
+					<item id="4">
 						<label>$LOCALIZE[7]</label>
 						<onclick>ActivateWindow(Filemanager)</onclick>
 					</item>
-					<item id="4">
+					<item id="5">
 						<label>$LOCALIZE[31030]</label>
 						<onclick>SetFocus(9000)</onclick>
 						<onclick>ActivateWindow(61)</onclick>
 					</item>
-					<item id="5">
+					<item id="6">
 						<label>$LOCALIZE[31013]</label>
 						<onclick>ActivateWindow(shutdownmenu)</onclick>
 					</item>
