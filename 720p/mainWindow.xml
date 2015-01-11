@@ -1,0 +1,1325 @@
+<window id="5533">
+    <defaultcontrol always="true">1000</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <include>dialogOpen</include>
+    <controls>
+        <control type="group">
+            <left>90</left>
+            <top>30</top>
+            <control type="image">
+                <left>20</left>
+                <top>-10</top>
+                <width>1060</width>
+                <height>650</height>
+				<texture border="29">dialogs/dialogWindow.png</texture>
+            </control>
+            <control type="image">
+                <description>LOGO</description>
+                <left>30</left>
+                <top>0</top>
+                <width>220</width>
+                <height>80</height>
+                <aspectratio>keep</aspectratio>
+                <!-- <texture>$INFO[Container(5533).Property(DIST_MEDIA)]/Logo.png</texture> -->
+				<texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/Logo.png</texture>	
+            </control>
+			<control type="label">
+                <description>header label</description>
+                <left>270</left>
+                <width>740</width>
+                <height>30</height>
+                <label>$ADDON[service.openelec.settings 600]</label>
+                <include>dialog_Windowtitle</include>
+            </control>
+			<control type="group">
+				<left>35</left>
+				<top>75</top>
+				<control type="image">
+					<width>1031</width>
+					<include>dialog_Separator</include>
+				</control>
+				<control type="image">
+					<top>440</top>
+					<width>1031</width>
+					<include>dialog_Separator</include>
+				</control>
+				<control type="image">
+					<left>228</left>
+					<height>440</height>
+					<include>dialog_Separator-y</include>
+				</control>
+			</control>
+            <!-- Main Menu (left) -->
+            <control type="list" id="1000">
+                <left>39</left>
+                <top>76</top>
+                <width>225</width>
+                <height>541</height>
+                <onleft>1500</onleft>
+                <pagecontrol>-</pagecontrol>
+                <scrolltime>200</scrolltime>
+                <itemlayout height="60" width="225">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>225</width>
+                        <height>60</height>
+						<texture border="3">dialogs/list-nofocus.png</texture>
+                    </control>
+                    <control type="label">
+                        <textcolor>Color4</textcolor>
+                        <font>small</font>
+                        <textoffsetx>16</textoffsetx>
+                        <aligny>center</aligny>
+                        <height>60</height>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="60" width="225">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>225</width>
+                        <height>60</height>
+						<texture border="3">dialogs/list-focus.png</texture>
+                        <animation effect="fade" end="50" time="10">Unfocus</animation>
+                    </control>
+                    <control type="label">
+                        <textcolor>Color1</textcolor>
+                        <font>small</font>
+                        <textoffsetx>16</textoffsetx>
+                        <aligny>center</aligny>
+                        <height>60</height>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </focusedlayout>
+            </control>
+	    <!-- Other Content -->
+            <control type="group">
+                <left>272</left>
+                <top>77</top>
+                <width>796</width>
+                <height>446</height>
+                <control type="group" id="1900">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>796</width>
+                    <height>446</height>
+                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1900)</visible>  
+                    <control type="image">
+                        <left>520</left>
+                        <top>220</top>
+                        <width>200</width>
+                        <height>200</height>
+                        <texture border="1">special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/logo_big.png</texture>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <top>15</top>
+                        <width>400</width>
+                        <height>16</height>
+                        <font>font12</font>
+                        <textcolor>Color2</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$ADDON[service.openelec.settings 606]</label>
+                    </control>	
+                    <control type="label">
+                        <left>160</left>
+                        <top>15</top>
+                        <width>400</width>
+                        <height>16</height>
+                        <font>font12</font>
+                        <textcolor>Color4</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[Container(5533).Property(Distri)] ($INFO[Container(5533).Property(build)])</label>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <top>37</top>
+                        <width>400</width>
+                        <height>16</height>
+                        <font>font12</font>
+                        <textcolor>Color2</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$ADDON[service.openelec.settings 607]</label>
+                    </control>	
+                    <control type="label">
+                        <left>160</left>
+                        <top>37</top>
+                        <width>400</width>
+                        <height>16</height>
+                        <font>font12</font>
+                        <textcolor>Color4</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[Container(5533).Property(Version)]</label>
+                    </control>
+                    <control type="label">
+                        <left>20</left>
+                        <top>59</top>
+                        <width>400</width>
+                        <height>16</height>
+                        <font>font12</font>
+                        <textcolor>Color2</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$ADDON[service.openelec.settings 608]</label>
+                    </control>
+                    <control type="label">
+                        <left>160</left>
+                        <top>59</top>
+                        <width>400</width>
+                        <height>16</height>
+                        <font>font12</font>
+                        <textcolor>Color4</textcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[Container(5533).Property(Arch)]</label>
+                    </control>
+                    <control type="image">
+                        <left>20</left>
+						<top>98</top>
+                        <width>737</width>
+						<height>2</height>
+                        <include>dialog_Separator</include>
+                    </control>
+                    <control type="textbox">
+                        <description>about OpenELEC</description>
+						<left>20</left>
+                        <top>110</top>
+                        <width>737</width>
+                        <height>140</height>
+                        <font>openelec-info</font>
+                        <textcolor>Color4</textcolor>
+                        <label>$ADDON[service.openelec.settings 609]</label>
+                    </control>
+                    <control type="textbox">
+                        <description>Support/Social Media info</description>
+						<left>20</left>
+                        <top>215</top>
+                        <width>400</width>
+                        <height>220</height>
+                        <font>openelec-smaller</font>
+                        <textcolor>Color4</textcolor>
+                        <label>$ADDON[service.openelec.settings 610]</label>
+                    </control>
+                    <control type="textbox">
+                        <description>donation info</description>
+                        <left>20</left>
+                        <top>448</top>
+                        <width>600</width>
+                        <height>100</height>
+                        <font>openelec-smaller</font>
+                        <align>left</align>
+                        <textcolor>Color4</textcolor>
+                        <label>$ADDON[service.openelec.settings 611]</label>
+                    </control>
+                </control>                        
+                <!-- simple list content (right) -->
+                <control type="list" id="1100">
+                    <left>-8</left>
+                    <top>-1</top>
+                    <width>798</width>
+                    <height>440</height>
+                    <onleft>1000</onleft>
+                    <onright>1500</onright>
+                    <scrolltime>200</scrolltime>
+                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1100)</visible>    
+                    <itemlayout height="40">
+                        <control type="group">
+                            <visible>!StringCompare(ListItem.Property(Typ), separator)</visible>
+                            <control type="image">
+                                <left>0</left>
+                                <width>798</width>
+                                <height>40</height>
+                                <texture border="3">dialogs/list-nofocus.png</texture>
+                            </control>
+                            <control type="label">
+                                <left>40</left>
+                                <width>500</width>
+                                <height>40</height>
+                                <aligny>center</aligny>
+                                <textcolor>Color4</textcolor>
+                                <selectedcolor>Color1</selectedcolor>
+                                <info>ListItem.Label</info>
+                            </control>
+                            <control type="label">
+                                <align>right</align>
+                                <left>363</left>
+                                <width>400</width>
+                                <height>40</height>
+                                <aligny>center</aligny>
+                                <textcolor>Color4</textcolor>
+                                <selectedcolor>Color1</selectedcolor>
+                                <info>ListItem.Property(value)</info>
+                                <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button)</visible>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>StringCompare(ListItem.Property(Typ), separator)</visible>
+                            <control type="image">
+                                <left>0</left>
+                                <top>38</top>
+                                <width>798</width>
+                                <height>2</height>
+                                <include>dialog_Separator</include>
+                                </control>
+                            <control type="label">
+                                <left>15</left>
+                                <width>400</width>
+                                <height>40</height>
+                                <aligny>center</aligny>
+                                <font>font13_title</font>
+                                <textcolor>Color2</textcolor>
+                                <info>ListItem.Label</info>
+                                <visible>true</visible>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>StringCompare(ListItem.Property(Typ), bool)</visible>
+                            <control type="image">
+                                <left>728</left>
+                                <top>8</top>
+                                <width>48</width>
+                                <height>24</height>
+                                <aspectratio>keep</aspectratio>
+                                <texture>dialogs/radioOff.png</texture>
+                                <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value), false) | IsEmpty(ListItem.Property(value))</visible>
+                            </control>
+                            <control type="image">
+                                <left>728</left>
+                                <top>8</top>
+                                <width>48</width>
+                                <height>24</height>
+                                <aspectratio>keep</aspectratio>
+                                <texture>dialogs/radioOn.png</texture>
+                                <visible>StringCompare(ListItem.Property(value), 1) | StringCompare(ListItem.Property(value), true)</visible>
+                            </control>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="40">  
+                        <control type="group">
+                            <visible>!StringCompare(ListItem.Property(Typ), separator)</visible>
+                            <control type="image">
+                                <left>0</left>
+                                <width>798</width>
+                                <height>40</height>
+                                <visible>Control.HasFocus(1100)</visible>
+                                <texture border="3">dialogs/list-focus.png</texture>
+                            </control>
+                            <control type="image">
+                                <left>0</left>
+                                <width>798</width>
+                                <height>40</height>
+                                <visible>!Control.HasFocus(1100)</visible>
+                                <texture border="3">dialogs/list-nofocus.png</texture>
+                            </control>
+                            <control type="label">
+                                <left>40</left>
+                                <width>500</width>
+                                <height>40</height>
+                                <aligny>center</aligny>
+                                <textcolor>Color1</textcolor>
+                                <info>ListItem.Label</info>
+                                <visible>Control.HasFocus(1100)</visible>
+                            </control>
+                            <control type="label">
+                                <align>right</align>
+                                <left>363</left>
+                                <width>400</width>
+                                <height>40</height>
+                                <aligny>center</aligny>
+                                <textcolor>Color1</textcolor>
+                                <info>ListItem.Property(value)</info>
+                                <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button) + Control.HasFocus(1100)</visible>
+                            </control>
+                            <control type="label">
+                                <left>40</left>
+                                <width>500</width>
+                                <height>40</height>
+                                <aligny>center</aligny>
+                                <textcolor>Color4</textcolor>
+                                <info>ListItem.Label</info>
+                                <visible>!Control.HasFocus(1100)</visible>
+                            </control>
+                            <control type="label">
+                                <align>right</align>
+                                <left>363</left>
+                                <width>400</width>
+                                <height>40</height>
+                                <aligny>center</aligny>
+                                <textcolor>Color4</textcolor>
+                                <info>ListItem.Property(value)</info>
+                                <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button) + !Control.HasFocus(1100)</visible>
+                            </control> 
+                        </control>
+                        <control type="group">
+                            <visible>StringCompare(ListItem.Property(Typ), separator)</visible>
+                            <control type="image">
+                                <left>0</left>
+                                <top>38</top>
+                                <width>798</width>
+                                <height>2</height>
+                                <include>dialog_Separator</include>
+                            </control>
+                            <control type="label">
+                                <left>15</left>
+                                <width>400</width>
+                                <height>40</height>
+                                <aligny>center</aligny>
+                                <font>font13_title</font>
+                                <textcolor>Color2</textcolor>
+                                <info>ListItem.Label</info>
+                                <visible>true</visible>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>StringCompare(ListItem.Property(Typ), bool)</visible>
+                            <control type="image">
+                                <left>728</left>
+                                <top>8</top>
+                                <width>48</width>
+                                <height>24</height>
+                                <aspectratio>keep</aspectratio>
+                                <texture>dialogs/radioOff.png</texture>
+                                <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value),false) | IsEmpty(ListItem.Property(value))</visible>
+                            </control>
+                            <control type="image">
+                                <left>728</left>
+                                <top>8</top>
+                                <width>48</width>
+                                <height>24</height>
+                                <aspectratio>keep</aspectratio>
+                                <texture>dialogs/radioOn.png</texture>
+                                <visible>StringCompare(ListItem.Property(value), 1) | StringCompare(ListItem.Property(value),true)</visible>
+                            </control>
+                        </control>
+                    </focusedlayout>                                           
+                </control>                                                 
+                <!-- Network Menu Content -->
+                <control type="list" id="1200">
+                    <left>-8</left>
+                    <top>-1</top>
+                    <width>798</width>
+                    <height>446</height>
+                    <onleft>1000</onleft>
+                    <onright>1500</onright>
+                    <scrolltime>300</scrolltime>
+                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1200)</visible>    
+                    <itemlayout height="100">
+                        <left>0</left>
+                        <top>0</top>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>798</width>
+                            <height>100</height>
+                            <texture>dialogs/list-nofocus.png</texture>
+                        </control>
+                        <!-- Icon ethernet -->
+                        <control type="image">
+                            <left>10</left>
+                            <top>20</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(netType), ethernet)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/eth.png</texture>
+                        </control>
+                        <!-- Icon wifi -->
+                        <control type="image">
+                            <left>10</left>
+                            <top>20</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/wlan.png</texture>
+                        </control>
+                        <!-- Icon vpn -->
+                        <control type="image">
+                            <left>10</left>
+                            <top>20</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(netType), vpn)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/vpn.png</texture>
+                        </control>
+                        <!-- Connection Name -->
+                        <control type="label">
+                            <left>70</left>
+                            <top>10</top>
+                            <width>390</width>
+                            <height>30</height>							
+                            <font>font24_title</font>
+                            <textcolor>Color4</textcolor>
+                            <info>ListItem.Label</info>
+                            <visible>true</visible>
+                        </control>
+                        <!-- Interface -->
+                        <control type="label">
+                            <left>70</left>
+                            <top>49</top>
+                            <width>200</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color4</textcolor>
+                            <label>$ADDON[service.openelec.settings 601]: [COLOR=Color4]$INFO[ListItem.Property(Interface)][/COLOR]</label>
+                            <visible>!IsEmpty(ListItem.Property(Interface))</visible>
+                        </control>
+                        <!-- Connection Address -->
+                        <control type="label">
+                            <left>240</left>
+                            <top>49</top>
+                            <width>250</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color4</textcolor>
+                            <label>$ADDON[service.openelec.settings 602]: [COLOR=Color4]$INFO[ListItem.Property(Address)][/COLOR]</label>
+                            <visible>StringCompare(ListItem.Property(State), online) | StringCompare(ListItem.Property(State), ready)</visible>
+                        </control>
+                        <!-- Method -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>49</top>
+                            <width>200</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color4</textcolor>
+                            <label>$ADDON[service.openelec.settings 603]: [COLOR=Color4]$INFO[ListItem.Property(Method)][/COLOR]</label>
+                        </control>
+                        <!-- State -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>20</top>
+                            <width>200</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color4</textcolor>
+                            <label>$ADDON[service.openelec.settings 604]: [COLOR=Color4]$INFO[ListItem.Property(State)][/COLOR]</label>
+                        </control>
+                        <!-- Signal strength -->
+                        <control type="progress">
+                            <left>10</left>
+                            <top>80</top>
+                            <width>778</width>
+                            <height>12</height>
+                            <info>ListItem.Property(Strength)</info>
+                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
+                        </control>
+                        <!-- Signal strength value -->
+                        <control type="label">
+                            <left>770</left>
+                            <top>66</top>
+                            <width>40</width>
+                            <height>40</height>
+                            <font>font10</font>
+                            <align>right</align>
+                            <textcolor>Color4</textcolor>
+                            <info>ListItem.Property(Strength)</info>
+                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
+                        </control>
+                        <!-- Online Symbol (top right) -->
+                        <control type="image">
+                            <left>738</left>
+                            <top>20</top>
+                            <width>36</width>
+                            <height>36</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(State), online)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/connected.png</texture>
+                        </control>
+                        <!-- Favorite Symbol (bottom right) -->
+                        <control type="image">
+                            <left>680</left>
+                            <top>50</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Favorite), 1)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/Favorite.png</texture>
+                        </control>
+                        <!-- Secure Symbol (bottom right) -->
+                        <control type="image">
+                            <left>710</left>
+                            <top>50</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/Key.png</texture>
+                        </control>		
+                    </itemlayout>
+                    <focusedlayout height="100">
+                        <left>0</left>
+                        <top>0</top>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>798</width>
+                            <height>100</height>
+                            <texture>dialogs/list-nofocus.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>798</width>
+                            <height>100</height>
+                            <visible>Control.HasFocus(1200) | Control.HasFocus(4323)</visible>
+                            <texture>dialogs/list-focus.png</texture>
+                        </control>
+                        <!-- Icon ethernet -->
+                        <control type="image">
+                            <left>10</left>
+                            <top>20</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(netType), ethernet)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/eth.png</texture>
+                        </control>
+                        <!-- Icon wifi -->
+                        <control type="image">
+                            <left>10</left>
+                            <top>20</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/wlan.png</texture>
+                        </control>
+                        <!-- Icon vpn -->
+                        <control type="image">
+                            <left>10</left>
+                            <top>20</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(netType), vpn)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/vpn.png</texture>
+                        </control>
+                        <!-- Connection Name -->
+                        <control type="label">
+                            <left>70</left>
+                            <top>10</top>
+                            <width>390</width>
+                            <height>30</height>
+                            <font>font24_title</font>
+                            <textcolor>Color2</textcolor>
+                            <info>ListItem.Label</info>
+                            <visible>true</visible>
+                        </control>
+
+                        <!-- Focus on left panel or Contect Menu -->
+						<!-- Interface -->
+                        <control type="label">
+                            <left>70</left>
+                            <top>49</top>
+                            <width>200</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 601]: [COLOR=Color4]$INFO[ListItem.Property(Interface)][/COLOR]</label>
+                            <visible>!IsEmpty(ListItem.Property(Interface)) + !Control.HasFocus(1200)</visible>
+                        </control>
+                        <!-- Connection Address -->
+                        <control type="label">
+                            <left>240</left>
+                            <top>49</top>
+                            <width>250</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color2</textcolor>
+                            <visible>StringCompare(ListItem.Property(State), online) | StringCompare(ListItem.Property(State), ready)</visible>
+                            <label>$ADDON[service.openelec.settings 602]: [COLOR=Color4]$INFO[ListItem.Property(Address)][/COLOR]</label>
+                            <visible>!Control.HasFocus(1200)</visible>
+                        </control>
+                        <!-- Method -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>49</top>
+                            <width>200</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 603]: [COLOR=Color4]$INFO[ListItem.Property(Method)][/COLOR]</label>
+                            <visible>!Control.HasFocus(1200)</visible>
+                        </control>
+                        <!-- State -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>20</top>
+                            <width>200</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 604]: [COLOR=Color4]$INFO[ListItem.Property(State)][/COLOR]</label>
+                            <visible>!Control.HasFocus(1200)</visible>
+                        </control>
+
+                        <!-- Focus on right panel -->
+						<!-- Interface -->
+                        <control type="label">
+                            <left>70</left>
+                            <top>49</top>
+                            <width>200</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 601]: [COLOR=Color1]$INFO[ListItem.Property(Interface)][/COLOR]</label>
+                            <visible>!IsEmpty(ListItem.Property(Interface)) + [Control.HasFocus(1200) | Control.HasFocus(4323)]</visible>
+                        </control>
+                        <!-- Connection Address -->
+                        <control type="label">
+                            <left>240</left>
+                            <top>49</top>
+                            <width>250</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color2</textcolor>
+                            <visible>StringCompare(ListItem.Property(State), online) | StringCompare(ListItem.Property(State), ready)</visible>
+                            <label>$ADDON[service.openelec.settings 602]: [COLOR=Color1]$INFO[ListItem.Property(Address)][/COLOR]</label>
+                            <visible>Control.HasFocus(1200) | Control.HasFocus(4323)</visible>
+                        </control>
+                        <!-- Method -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>49</top>
+                            <width>200</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 603]: [COLOR=Color1]$INFO[ListItem.Property(Method)][/COLOR]</label>
+                            <visible>Control.HasFocus(1200) | Control.HasFocus(4323)</visible>
+                        </control>
+                        <!-- State -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>20</top>
+                            <width>200</width>
+                            <height>20</height>
+                            <font>font12</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 604]: [COLOR=Color1]$INFO[ListItem.Property(State)][/COLOR]</label>
+                            <visible>Control.HasFocus(1200) | Control.HasFocus(4323)</visible>
+                        </control>
+
+                        <!-- Signal strength -->
+                        <control type="progress">
+                            <left>10</left>
+                            <top>80</top>
+                            <width>778</width>
+                            <height>12</height>
+                            <info>ListItem.Property(Strength)</info>
+                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
+                        </control>
+                        <!-- Signal strength value -->
+                        <control type="label">
+                            <left>770</left>
+                            <top>66</top>
+                            <width>40</width>
+                            <height>40</height>
+                            <font>font10</font>
+                            <align>right</align>
+                            <textcolor>Color4</textcolor>
+                            <info>ListItem.Property(Strength)</info>
+                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
+                        </control>
+                        <!-- Online Symbol (top right) -->
+                        <control type="image">
+                            <left>738</left>
+                            <top>20</top>
+                            <width>36</width>
+                            <height>36</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(State), online)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/connected.png</texture>
+                        </control>
+                        <!-- Favorite Symbol (bottom right) -->
+                        <control type="image">
+                            <left>680</left>
+                            <top>50</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Favorite), 1)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/Favorite.png</texture>
+                        </control>
+                        <!-- Secure Symbol (bottom right) -->
+                        <control type="image">
+                            <left>710</left>
+                            <top>50</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/Key.png</texture>
+                        </control>		
+                    </focusedlayout> 
+                </control>
+                <!-- Bluetooth Menu Content -->
+                <control type="label" id="1301">
+                    <left>0</left>
+                    <top>200</top>
+                    <width>790</width>
+                    <height>220</height>
+                    <info>
+                    </info>
+                    <align>center</align>
+                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1300) + StringCompare(Container(1300).NumItems, 0)</visible> 
+                </control>
+                <control type="list" id="1300">
+                    <left>-8</left>
+                    <top>-1</top>
+                    <width>798</width>
+                    <height>446</height>
+                    <onleft>1000</onleft>
+                    <onright>1500</onright>
+                    <!-- <pagecontrol>1099</pagecontrol> -->
+                    <scrolltime>200</scrolltime>
+                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1300)</visible>    
+                    <itemlayout height="70">
+                        <left>0</left>
+                        <top>0</top>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>798</width>
+                            <height>70</height>
+                            <texture>dialogs/list-nofocus.png</texture>
+                        </control>
+                        <!-- default -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), default)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt.png</texture>	
+                        </control>
+                        <!-- modem -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), modem)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-modem.png</texture>
+                        </control>
+                        <!-- audio -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), audio-card)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-audio-card.png</texture>
+                        </control>
+                        <!-- Camera Photo -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), camera-photo)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-camera-photo.png</texture>
+                        </control>		
+                        <!-- Icon phone -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), phone)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-phone.png</texture>
+                        </control>	
+                        <!-- camera-video -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), camera-video)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-camera-video.png</texture>
+                        </control>
+                        <!-- input-mouse -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), input-mouse)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-input-mouse.png</texture>
+                        </control>								
+                        <!-- input-gaming -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), input-gaming)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-input-gaming.png</texture>
+                        </control>	
+                        <!-- input-keyboard -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), input-keyboard)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-input-keyboard.png</texture>
+                        </control>	
+                        <!-- input-tablet -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), input-tablet)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-input-tablet.png</texture>
+                        </control>	
+                        <!-- Printer -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), printer)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-printer.png</texture>
+                        </control>
+                        <!-- Computer -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), computer)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-computer.png</texture>
+                        </control>                                                
+                        <!-- Connection Name -->
+                        <control type="label">
+                            <left>120</left>
+                            <top>10</top>
+                            <width>390</width>
+                            <height>30</height>
+                            <font>font24_title</font>
+                            <textcolor>Color2</textcolor>
+                            <info>ListItem.Label</info>
+                            <visible>true</visible>
+                        </control>
+                        <!-- Connection Address -->
+                        <control type="label">
+                            <left>120</left>
+                            <top>42</top>
+                            <width>350</width>
+                            <height>20</height>
+                            <font>small</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 605]: [COLOR=Color4]$INFO[ListItem.Property(Address)][/COLOR]</label>
+                        </control>
+                        <!-- Connected State (Yes) -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>42</top>
+                            <width>350</width>
+                            <height>20</height>
+                            <font>small</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 32333][COLOR=Color4]$ADDON[service.openelec.settings 32334][/COLOR]</label>
+                            <visible>SubString(ListItem.Property(ConnectedState),$LOCALIZE[107])</visible>
+                        </control>
+                        <!-- Connected State (No) -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>42</top>
+                            <width>350</width>
+                            <height>20</height>
+                            <font>small</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 32333][COLOR=Color4]$ADDON[service.openelec.settings 32335][/COLOR]</label>
+                            <visible>SubString(ListItem.Property(ConnectedState),$LOCALIZE[106])</visible>
+                        </control>
+                        <!-- Paired Symbol (bottom right) -->
+                        <control type="image">
+                            <left>720</left>
+                            <top>42</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Paired), 1)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/Favorite.png</texture>
+                        </control>
+                        <!-- Trusted Symbol (bottom right) -->
+                        <control type="image">
+                            <left>750</left>
+                            <top>42</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>IntegerGreaterThan(ListItem.Property(Trusted), 0)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/Key.png</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="70">
+                        <left>0</left>
+                        <top>0</top>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>798</width>
+                            <height>70</height>
+                            <texture>dialogs/list-nofocus.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>798</width>
+                            <height>68</height>
+                            <visible>Control.HasFocus(1300)</visible>
+                            <texture>dialogs/list-focus.png</texture>
+                        </control>
+                        <!-- default -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), default)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt.png</texture>
+                        </control>
+                        <!-- modem -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), modem)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-modem.png</texture>
+                        </control>
+                        <!-- audio -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), audio-card)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-audio-card.png</texture>
+                        </control>
+                        <!-- Camera Photo -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), camera-photo)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-camera-photo.png</texture>
+                        </control>		
+                        <!-- Icon phone -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), phone)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-phone.png</texture>
+                        </control>	
+                        <!-- camera-video -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), camera-video)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-camera-video.png</texture>
+                        </control>	
+                        <!-- input-mouse -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), input-mouse)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-input-mouse.png</texture>
+                        </control>							
+                        <!-- input-gaming -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), input-gaming)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-input-gaming.png</texture>
+                        </control>	
+                        <!-- input-keyboard -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), input-keyboard)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-input-keyboard.png</texture>
+                        </control>	
+                        <!-- input-tablet -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), input-tablet)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-input-tablet.png</texture>
+                        </control>	
+                        <!-- Printer -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), printer)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-printer.png</texture>
+                        </control>
+                        <!-- Computer -->
+                        <control type="image">
+                            <left>15</left>
+                            <top>12</top>
+                            <width>48</width>
+                            <height>48</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Icon), computer)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/bt-computer.png</texture>
+                        </control>                                                
+                        <!-- Connection Name -->
+                        <control type="label">
+                            <left>120</left>
+                            <top>10</top>
+                            <width>390</width>
+                            <height>30</height>
+                            <font>font24_title</font>
+                            <textcolor>Color2</textcolor>
+                            <info>ListItem.Label</info>
+                            <visible>true</visible>
+                        </control>
+                        <!-- Connection Address (focus on right panel) -->
+                        <control type="label">
+                            <left>120</left>
+                            <top>42</top>
+                            <width>350</width>
+                            <height>20</height>
+                            <font>small</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 605]: [COLOR=Color1]$INFO[ListItem.Property(Address)][/COLOR]</label>
+                            <visible>Control.HasFocus(1300)</visible>
+                        </control>
+                        <!-- Connection Address (focus on left panel or context menu) -->
+                        <control type="label">
+                            <left>120</left>
+                            <top>42</top>
+                            <width>350</width>
+                            <height>20</height>
+                            <font>small</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 605]: [COLOR=Color4]$INFO[ListItem.Property(Address)][/COLOR]</label>
+                            <visible>!Control.HasFocus(1300)</visible>
+                        </control>
+                        <!-- Connected State (Yes/No + focus on right panel) -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>42</top>
+                            <width>350</width>
+                            <height>20</height>
+                            <font>small</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$INFO[ListItem.Property(ConnectedState)]</label>
+                            <visible>Control.HasFocus(1300)</visible>
+                        </control>
+                        <!-- Connected State (Yes + focus on left panel or context menu) -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>42</top>
+                            <width>350</width>
+                            <height>20</height>
+                            <font>small</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 32333][COLOR=Color4]$ADDON[service.openelec.settings 32334][/COLOR]</label>
+                            <visible>!Control.HasFocus(1300) + SubString(ListItem.Property(ConnectedState),$LOCALIZE[107])</visible>
+                        </control>
+                        <!-- Connected State (No + focus on left panel or context menu) -->
+                        <control type="label">
+                            <left>520</left>
+                            <top>42</top>
+                            <width>350</width>
+                            <height>20</height>
+                            <font>small</font>
+                            <textcolor>Color2</textcolor>
+                            <label>$ADDON[service.openelec.settings 32333][COLOR=Color4]$ADDON[service.openelec.settings 32335][/COLOR]</label>
+                            <visible>!Control.HasFocus(1300) + SubString(ListItem.Property(ConnectedState),$LOCALIZE[106])</visible>
+                        </control>
+                        <!-- Paired Symbol (bottom right) -->
+                        <control type="image">
+                            <left>720</left>
+                            <top>42</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>StringCompare(ListItem.Property(Paired), 1)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/Favorite.png</texture>
+                        </control>
+                        <!-- Trusted Symbol (bottom right) -->
+                        <control type="image">
+                            <left>750</left>
+                            <top>42</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <aspectratio>keep</aspectratio>
+                            <visible>IntegerGreaterThan(ListItem.Property(Trusted), 0)</visible> 
+                            <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/icons/Key.png</texture>
+                        </control>
+                    </focusedlayout> 
+                </control>
+            </control>
+            <control type="textbox" id="1400">
+                <description>Appearance Description</description>
+                <left>285</left>
+                <top>525</top>
+                <width>740</width>
+                <height>100</height>
+                <font>small</font>
+                <label>$INFO[Container(5533).Property(InfoText)]</label>
+                <align>left</align>
+                <textcolor>Color4</textcolor>
+				<visible>!StringCompare(Container(1000).ListItem.Property(listTyp), 1900)</visible>
+            </control>
+            <control type="button" id="1504">
+                <left>570</left>
+                <top>520</top>
+                <width>230</width>
+                <height>40</height>
+                <visible>true</visible>
+                <texturefocus border="20,16,20,16">dialogs/button-focus.png</texturefocus>
+                <texturenofocus border="14">dialogs/button.png</texturenofocus>
+                <label>
+                </label>
+                <font>small</font>
+                <align>center</align>
+                <textoffsety>7</textoffsety>
+                <textcolor>Color4</textcolor>
+                <focusedcolor>Color1</focusedcolor>
+                <onup>1000</onup>
+                <ondown>1501</ondown>
+                <onleft>1501</onleft>
+                <onright>1503</onright>
+                <visible>!IsEmpty(Control.GetLabel(1504))</visible>
+            </control>
+            <control type="button" id="1503">
+                <left>825</left>
+                <top>520</top>
+                <width>230</width>
+                <height>40</height>
+                <visible>true</visible>
+                <texturefocus border="20,16,20,16">dialogs/button-focus.png</texturefocus>
+                <texturenofocus border="14">dialogs/button.png</texturenofocus>
+                <label>
+                </label>
+                <font>small</font>
+                <align>center</align>
+                <textoffsety>7</textoffsety>
+                <textcolor>Color4</textcolor>
+                <focusedcolor>Color1</focusedcolor>
+                <onup>1000</onup>
+                <ondown>1502</ondown>
+                <onleft>1504</onleft>
+                <onright>1000</onright>
+                <visible>!IsEmpty(Control.GetLabel(1503))</visible>
+            </control>
+            <control type="button" id="1502">
+                <left>825</left>
+                <top>575</top>
+                <width>230</width>
+                <height>40</height>
+                <visible>true</visible>
+                <texturefocus border="20,16,20,16">dialogs/button-focus.png</texturefocus>
+                <texturenofocus border="14">dialogs/button.png</texturenofocus>
+                <label>
+                </label>
+                <font>small</font>
+                <align>center</align>
+                <textoffsety>7</textoffsety>
+                <textcolor>Color4</textcolor>
+                <focusedcolor>Color1</focusedcolor>
+                <onup>1503</onup>
+                <ondown>1000</ondown>
+                <onleft>1501</onleft>
+                <onright>1000</onright>
+                <visible>!IsEmpty(Control.GetLabel(1502))</visible>
+            </control>
+            <control type="button" id="1501">
+                <left>570</left>
+                <top>575</top>
+                <width>230</width>
+                <height>40</height>
+                <visible>true</visible>
+                <texturefocus border="20,16,20,16">dialogs/button-focus.png</texturefocus>
+                <texturenofocus border="14">dialogs/button.png</texturenofocus>
+                <label>
+                </label>
+                <font>small</font>
+                <align>center</align>
+                <textoffsety>7</textoffsety>
+                <textcolor>Color4</textcolor>
+                <focusedcolor>Color1</focusedcolor>
+                <onup>1504</onup>
+                <ondown>1000</ondown>
+                <onleft>1500</onleft>
+                <onright>1502</onright>
+                <visible>!IsEmpty(Control.GetLabel(1501))</visible>
+            </control>
+            <control type="button" id="1500">
+                <left>315</left>
+                <top>575</top>
+                <width>230</width>
+                <height>40</height>
+                <visible>true</visible>
+                <texturefocus border="20,16,20,16">dialogs/button-focus.png</texturefocus>
+                <texturenofocus border="14">dialogs/button.png</texturenofocus>
+                <label>
+                </label>
+                <font>small</font>
+                <align>center</align>
+                <textoffsety>7</textoffsety>
+                <textcolor>Color4</textcolor>
+                <focusedcolor>Color1</focusedcolor>
+                <onup>1000</onup>
+                <ondown>1000</ondown>
+                <onleft>1000</onleft>
+                <onright>1501</onright>
+                <visible>!IsEmpty(Control.GetLabel(1500))</visible>
+            </control>
+        </control>		
+    </controls>
+</window>

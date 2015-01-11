@@ -454,6 +454,16 @@
 			<filename>Ubuntu-L.ttf</filename>
 			<size>30</size>
 		</font>
+		<font>
+			<name>openelec-smaller</name>
+			<filename>Ubuntu.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>openelec-info</name>
+			<filename>Ubuntu.ttf</filename>
+			<size>18</size>
+		</font>
 <!---OSD------>
 		<font>
 			<name>osdTitle</name>
