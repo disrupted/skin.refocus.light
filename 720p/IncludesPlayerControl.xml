@@ -241,7 +241,7 @@
 						<onback>SetFocus(599)</onback>
 						<include>dialog_Button-list</include>
 						<onclick>Dialog.Close(VideoOSD,true)</onclick>
-						<onclick>XBMC.ActivateWindow(123)</onclick>
+						<onclick>ActivateWindow(OSDVideoSettings)</onclick>
 					</control>
 					<!--audio settings-->
 					<control type="button" id="604">
@@ -250,7 +250,7 @@
 						<onback>SetFocus(599)</onback>
 						<include>dialog_Button-list</include>
 						<onclick>Dialog.Close(VideoOSD,true)</onclick>
-						<onclick>XBMC.ActivateWindow(124)</onclick>
+						<onclick>ActivateWindow(OSDAudioSettings)</onclick>
 					</control>
 					<!--bookmarks-->
 					<control type="button" id="605">
@@ -259,7 +259,7 @@
 						<onback>SetFocus(599)</onback>
 						<include>dialog_Button-list</include>
 						<onclick>Dialog.Close(VideoOSD,true)</onclick>
-						<onclick>XBMC.ActivateWindow(125)</onclick>
+						<onclick>ActivateWindow(VideoBookmarks)</onclick>
 						<visible>!VideoPlayer.Content(LiveTV)</visible>
 					</control>
 					<!--get subtitles-->

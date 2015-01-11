@@ -9,22 +9,25 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>!Window.IsActive(145)</visible>
-			<control type="image" id="1">
-				<include>dialogWindow</include>
-				<width>600</width>
-				<height>640</height>
-				<visible>Window.IsActive(osdvideosettings)</visible>
-			</control>
+			<visible>!Window.IsVisible(SliderDialog)</visible>
 			<control type="image" id="1">
 				<include>dialogWindow</include>
 				<width>600</width>
 				<height>560</height>
-				<visible>Window.IsActive(osdaudiosettings)</visible>
-			</control>	
-			<control type="label" id="2">
+				<visible>Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)</visible>
+				<animation effect="fade" start="0" end="85" time="0">WindowOpen</animation>
+			</control>
+			<control type="label">
 				<width>532</width>
 				<include>dialog_Windowtitle</include>
+				<label>$LOCALIZE[3] - $LOCALIZE[5]</label>
+				<visible>Window.IsVisible(123)</visible>
+			</control>
+			<control type="label">
+				<width>532</width>
+				<include>dialog_Windowtitle</include>
+				<label>$LOCALIZE[292] - $LOCALIZE[5]</label>
+				<visible>Window.IsVisible(124)</visible>
 			</control>
 			<control type="group">
 				<posx>19</posx>
@@ -35,17 +38,6 @@
 				</control>
 				<control type="grouplist" id="5">
 					<width>563</width>
-					<height>520</height>
-					<itemgap>0</itemgap>
-					<onleft>5</onleft>
-					<onright>5</onright>
-					<onup>5</onup>
-					<ondown>5</ondown>
-					<pagecontrol>60</pagecontrol>
-					<visible>Window.IsActive(osdvideosettings)</visible>
-				</control>
-				<control type="grouplist" id="5">
-					<width>563</width>
 					<height>440</height>
 					<itemgap>0</itemgap>
 					<onleft>5</onleft>
@@ -53,7 +45,7 @@
 					<onup>5</onup>
 					<ondown>5</ondown>
 					<pagecontrol>60</pagecontrol>
-					<visible>Window.IsActive(osdaudiosettings)</visible>
+					<visible>Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)</visible>
 				</control>
 			</control>
 			<control type="sliderex" id="13">
