@@ -195,7 +195,7 @@
 	<include name="dialog_Slider">
 		<sliderwidth>210</sliderwidth>
 		<sliderheight>32</sliderheight>
-		<font>small</font>e
+		<font>small</font>
 		<height>40</height>
 		<textcolor>Color4</textcolor>
 		<focusedcolor>Color1</focusedcolor>
