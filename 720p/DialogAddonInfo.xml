@@ -74,7 +74,7 @@
 							<include>dialog_CommonListItem</include>
 						</control>
 						<control type="label">
-							<posx>725</posx>
+							<left>40</left>
 							<width>680</width>
 							<height>36</height>
 							<align>right</align>
@@ -97,7 +97,7 @@
 							<include>dialog_CommonListItem</include>
 						</control>
 						<control type="label">
-							<posx>725</posx>
+							<left>40</left>
 							<width>680</width>
 							<height>36</height>
 							<align>right</align>
