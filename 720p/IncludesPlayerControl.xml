@@ -53,8 +53,9 @@
 						<onback>SetFocus(599)</onback>
 						<include>dialog_Button-list</include>
 						<onclick>Dialog.Close(MusicOSD,true)</onclick>
-						<onclick>XBMC.LastFM.Love</onclick>
-						<visible>LastFM.RadioPlaying</visible>
+						<onclick>RunScript(service.scrobbler.lastfm,action=LastFM.Love)</onclick>
+						<enable>SubString(Window(Home).Property(LastFM.CanLove),true)</enable>
+						<visible>System.HasAddon(service.scrobbler.lastfm)</visible>
 					</control>
 					<control type="button" id="605">
 						<width>234</width>
@@ -62,8 +63,9 @@
 						<onback>SetFocus(599)</onback>
 						<include>dialog_Button-list</include>
 						<onclick>Dialog.Close(MusicOSD,true)</onclick>
-						<onclick>XBMC.LastFM.Ban</onclick>
-						<visible>LastFM.RadioPlaying</visible>
+						<onclick>RunScript(service.scrobbler.lastfm,action=LastFM.Ban)</onclick>
+						<enable>SubString(Window(Home).Property(LastFM.CanBan),true)</enable>
+						<visible>System.HasAddon(service.scrobbler.lastfm)</visible>
 					</control>
 					<!--get lyrics-->
 					<control type="togglebutton" id="606">
