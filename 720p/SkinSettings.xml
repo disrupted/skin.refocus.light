@@ -393,11 +393,10 @@
 			</control>
 			<!-- transition_OSD -->
 			<control type="radiobutton" id="763">
-				<label>Activate FullscreenInfo animation on Video OSD</label>
-				<onclick>Skin.ToggleSetting(videoosd.transition)</onclick>
-				<selected>Skin.HasSetting(videoosd.transition)</selected>
+				<label>Activate FullscreenInfo animation on Video &amp; Music OSD</label>
+				<onclick>Skin.ToggleSetting(osd.transition)</onclick>
+				<selected>Skin.HasSetting(osd.transition)</selected>
 				<include>button_Settings</include>
-				<visible>Skin.HasSetting(devel)</visible>
 			</control>
 		</control>
 <!--ADDONS-->

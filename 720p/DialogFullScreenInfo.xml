@@ -5,7 +5,7 @@
 		<include>clock</include>
 		<control type="group">
 			<include>osd_Info</include>
-			<include condition="Skin.HasSetting(videoosd.transition)">transition_OSD</include>
+			<include condition="Skin.HasSetting(osd.transition)">transition_OSD</include>
 		</control>
 	</controls>
 </window>
