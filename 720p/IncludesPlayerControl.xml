@@ -44,7 +44,7 @@
 						<label>$LOCALIZE[13388]</label>
 						<onback>SetFocus(599)</onback>
 						<include>dialog_Button-list</include>
-						<onclick>XBMC.ActivateWindow(122)</onclick>
+						<onclick>ActivateWindow(visualisationpresetlist)</onclick>
 					</control>
 					<!--Last.fm-->
 					<control type="button" id="604">
