@@ -15,7 +15,7 @@
 					<width>460</width>
 					<height>663</height>
 					<include>frame_Poster-List</include>
-					<visible>!Container.Content(musicvideos)</visible>
+					<visible>!Container.Content(musicvideos) + !SubString(ListItem.Path,plugin://)</visible>
 				</control>
 				<control type="image">
 					<width>414</width>
@@ -23,7 +23,18 @@
 					<texture background="true" fallback="thumbs/movie_portrait.jpg">$INFO[ListItem.Thumb]</texture>
 					<aspectratio align="center">stretch</aspectratio>
 					<include>thumb_Portrait-List</include>
-					<visible>!Control.HasFocus(50) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+					<visible>!Control.HasFocus(50) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !SubString(ListItem.Path,plugin://)</visible>
+				</control>
+				<control type="image">
+					<posx>-15</posx>
+					<width>474</width>
+					<height>617</height>
+					<texture background="true" fallback="thumbs/movie_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+					<bordertexture border="40">frames/frame_Square_clear.png</bordertexture>
+					<bordersize>22</bordersize>
+					<aspectratio align="center">keep</aspectratio>
+					<include>thumb_Portrait-List</include>
+					<visible>!Control.HasFocus(50) + SubString(ListItem.Path,plugin://)</visible>
 				</control>
 				<control type="image">
 					<width>414</width>
@@ -236,6 +247,7 @@
 					<!--cast/artists-->
 					<control type="group">
 						<width>125</width>
+						<visible>!IsEmpty(ListItem.Cast)</visible>
 						<control type="button" id="8005">
 							<label>$VAR[videoInfo.Cast]</label>
 							<onclick>SendClick(2003,5)</onclick>
@@ -289,8 +301,9 @@
 				<control type="list" id="50">
 					<width>645</width>
 					<height>176</height>
-					<onleft>8000</onleft>
-					<onright>RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</onright>
+					<onleft>8001</onleft>
+					<onright condition="System.HasAddon(script.metadata.actors)">RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</onright>
+					<onright condition="!System.HasAddon(script.metadata.actors)">8006</onright>
 					<onup>50</onup>
 					<ondown>50</ondown>
 					<scrolltime tween="Cubic" easing="Out">200</scrolltime>
