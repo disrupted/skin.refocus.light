@@ -886,7 +886,7 @@
 			<include>transition_Container</include>
 			<include>toggle_Menu</include>
 			<include>infoDialogHide</include>
-			<visible>Control.IsVisible(50) + Container.Content(addons) | [substring(container.folderpath,plugin://) + !Container.Content(movies)] | substring(container.folderpath,addons://repos/) + !SubString(Container.FolderPath,plugin.video.tvalacarta)</visible>
+			<visible>Control.IsVisible(50) + Container.Content(addons) | [substring(container.folderpath,plugin://) + !Container.Content(movies)]</visible>
 			<control type="image">
 				<width>512</width>
 				<height>256</height>
@@ -1132,7 +1132,7 @@
 					<posy>-15</posy>
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
-					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(tvshows) | VideoPlayer.Content(episodes) | VideoPlayer.Content(livetv)</visible>
+					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(livetv)</visible>
 					<control type="image">
 						<width>96</width>
 						<height>64</height>
