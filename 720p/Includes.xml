@@ -890,12 +890,25 @@
 			<control type="image">
 				<posx>-20</posx>
 				<posy>-30</posy>
-				<width>565</width>
+				<width>564</width>
 				<height>336</height>
-				<texture background="true" fallback="thumbs/addon.png">$VAR[thumb_Landscape.Condition]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<bordertexture border="40">frames/frame_Square_clear.png</bordertexture>
 				<bordersize>22</bordersize>
-				<aspectratio align="center">scale</aspectratio>
+				<aspectratio align="left">keep</aspectratio>
+				<visible>!SubString(ListItem.Path,plugin://plugin.video.youtube/play)</visible>
+				<!-- <visible>!Container.Content(seasons) + Control.IsVisible(50) + !SubString(ListItem.Icon,default) + ![SubString(Container.FolderPath,plugin://) + [Container.Content(movies) | Container.Content(tvshows)]]</visible> -->
+			</control>
+			<control type="image">
+				<posx>-20</posx>
+				<posy>-30</posy>
+				<width>564</width>
+				<height>336</height>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<bordertexture border="40">frames/frame_Square_clear.png</bordertexture>
+				<bordersize>22</bordersize>
+				<aspectratio align="left">scale</aspectratio>
+				<visible>SubString(ListItem.Path,plugin://plugin.video.youtube/play)</visible>
 			</control>
 			<control type="group">
 				<posx>0</posx>
