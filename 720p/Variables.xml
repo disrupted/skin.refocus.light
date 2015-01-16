@@ -12,10 +12,6 @@
 		<value condition="!IsEmpty(Player.Art(clearart))">$INFO[Player.Art(clearart)]</value>
 		<value>$INFO[Player.Art(clearlogo)]</value>
 	</variable>
-	 <variable name="PlayerPoster">
-		<value condition="VideoPlayer.Content(episodes)">$INFO[Player.Art(tvshow.poster)]</value>
-		<value>$INFO[VideoPlayer.Cover]</value>
-	</variable>
 	<variable name="PlayerThumb">
 		<!--<value condition="VideoPlayer.Content(episodes)">$INFO[Player.Art(tvshowthumb)]</value>-->
 		<value>$INFO[Player.Art(thumb)]</value>

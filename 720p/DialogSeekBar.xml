@@ -25,19 +25,6 @@
 					</animation>
 					<visible>Skin.HasSetting(videoosd.clearart) + [VideoPlayer.Content(episodes) | VideoPlayer.Content(movies)]</visible>
 				</control>
-
-				<!--thumb for streams-->
-				<control type="image" id="1">
-					<posx>10</posx>
-					<posy>400</posy>
-					<width>280</width>
-					<height>340</height>
-					<texture background="true" diffuse="frames/frame_Square-small-mask.png">$VAR[PlayerPoster]</texture>
-					<aspectratio align="right">keep</aspectratio>
-					<include>transition_OSD</include>
-					<visible>[VideoPlayer.Content(files) | VideoPlayer.Content(livetv) | SubString(Player.FolderPath,http)]</visible>
-				</control>
-			
 			<!-- episode logo -->
 			<control type ="group">
 				<visible>Skin.HasSetting(videoosd.logo)</visible>

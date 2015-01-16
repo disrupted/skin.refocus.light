@@ -1046,6 +1046,15 @@
 				<aspectratio align="center">keep</aspectratio>
 			</control>
 			<control type="image" id="1">
+				<posx>5</posx>
+				<posy>-10</posy>
+				<width>185</width>
+				<height>225</height>
+				<texture background="true" diffuse="frames/frame_Square-small-mask.png">$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio align="right">keep</aspectratio>
+				<visible>VideoPlayer.Content(files) | SubString(Player.FolderPath,http)</visible>
+			</control>
+			<control type="image" id="1">
 				<posx>14</posx>
 				<posy>34</posy>
 				<width>128</width>
@@ -1064,10 +1073,10 @@
 			</control>
 			<!---info--->
 			<control type="group" id="1">
-				<posx>160</posx>
+				<posx>200</posx>
 				<posy>34</posy>
 				<control type="label" id="1">
-					<width>800</width>
+					<width>760</width>
 					<label>$VAR[osd.Title.Info]</label>
 					<textcolor>Color1</textcolor>
 					<font>titleSpecial</font>
@@ -1107,16 +1116,6 @@
 						<include>seekbar_Label-Info.Main</include>
 					</control>
 				</control>
-				<control type="label" id="1">
-					<posy>54</posy>
-					<width>850</width>
-					<label>$LOCALIZE[209]: $INFO[VideoPlayer.Offset(1).Artist,]$INFO[MusicPlayer.Offset(1).Title, - ] ($INFO[VideoPlayer.PlaylistPosition,]$INFO[VideoPlayer.PlaylistLength,/])</label>
-					<textcolor>Color3</textcolor>
-					<font>titleSpecial</font>
-					<include>info_Sub</include>
-					<include>autoscroll-line</include>
-					<visible>VideoPlayer.Content(musicvideos)</visible>
-				</control>
 				<control type="image" id="1">
 					<posx>1020</posx>
 					<posy>-3</posy>
@@ -1132,7 +1131,7 @@
 					<posy>-15</posy>
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
-					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(livetv)</visible>
+					<visible>Player.HasVideo</visible>
 					<control type="image">
 						<width>96</width>
 						<height>64</height>
@@ -1190,7 +1189,6 @@
 				<!--plot-->
 				<control type="group" id="1">
 					<posy>63</posy>
-					<visible>Player.HasVideo + ![VideoPlayer.Content(musicvideos) | VideoPlayer.Content(files)]</visible>
 					<control type="textbox" id="1">
 						<height>115</height>
 						<width>1090</width>
@@ -1198,6 +1196,16 @@
 						<textcolor>Color3</textcolor>
 						<font>descriptionbig</font>
 						<include>description_OSD</include>
+						<visible>Player.HasVideo + ![VideoPlayer.Content(files) | VideoPlayer.Content(musicvideos)]</visible>
+					</control>
+					<control type="textbox" id="1">
+						<height>75</height>
+						<width>1090</width>
+						<label>$VAR[player_Plot.Condition]</label>
+						<textcolor>Color3</textcolor>
+						<font>descriptionbig</font>
+						<include>description_OSD</include>
+						<visible>Player.HasVideo + [VideoPlayer.Content(files) | VideoPlayer.Content(musicvideos)]</visible>
 					</control>
 				</control>
 			</control>
