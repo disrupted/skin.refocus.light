@@ -311,7 +311,7 @@
 				<control type="group">
 					<width>220</width>
 					<height>42</height>
-					<visible>Control.IsVisible(50) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)]</visible>
+					<visible>Control.IsVisible(50) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets)]</visible>
 					<control type="togglebutton" id="90">
 						<altlabel>$LOCALIZE[31039]</altlabel>
 						<label>$LOCALIZE[31061]</label>
