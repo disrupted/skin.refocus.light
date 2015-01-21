@@ -283,12 +283,12 @@
 
 <!---INFODIALOG------>
 	<variable name="videoInfo.Header">
-		<value condition="Container.Content(movies) + !IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Property(ReleaseDate)]</value>
+		<value condition="Container.Content(tvshows) + !IsEmpty(ListItem.Premiered)">$LOCALIZE[20416]: $INFO[ListItem.Premiered]</value>
 		<value condition="Container.Content(movies) + !IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
 		<value condition="Container.Content(movies) + IsEmpty(ListItem.Tagline)">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.TVShowTitle] • $INFO[ListItem.Season,$LOCALIZE[20373] , - ]$INFO[ListItem.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="Container.Content(musicvideos) + !Window.IsActive(videofiles)">$INFO[ListItem.Artist]</value>
-		<value condition="ListItem.IsFolder + Substring(Container.FolderPath,videodb) + !IsEmpty(ListItem.Title)">$LOCALIZE[20338] $LOCALIZE[20141]</value>
+		<value condition="ListItem.IsFolder + Container.Content(movies)">$LOCALIZE[20338] $LOCALIZE[20141]</value>
 	</variable>
 	<variable name="videoInfo.Cast">
 		<value condition="Container.Content(musicvideos)">$LOCALIZE[133]</value>
