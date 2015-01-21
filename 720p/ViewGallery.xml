@@ -192,7 +192,7 @@
 			<control type="image">
 				<include>screen_Dimensions</include>
 				<aspectratio>scale</aspectratio>
-				<texture background="true" fallback="backgrounds/pictures.jpg">$INFO[ListItem.FilenameAndPath]</texture>
+				<texture background="true" fallback="special://skin/backgrounds/pictures.jpg">$INFO[ListItem.FilenameAndPath]</texture>
 				<visible>Window.IsActive(2)</visible>
 			</control>
 		</itemlayout>
@@ -200,7 +200,7 @@
 			<control type="image">
 				<include>screen_Dimensions</include>
 				<aspectratio>scale</aspectratio>
-				<texture background="true" fallback="backgrounds/pictures.jpg">$INFO[ListItem.FilenameAndPath]</texture>
+				<texture background="true" fallback="special://skin/backgrounds/pictures.jpg">$INFO[ListItem.FilenameAndPath]</texture>
 				<visible>Window.IsActive(2)</visible>
 			</control>
 		</focusedlayout>
