@@ -134,7 +134,7 @@
 				<property name="Node">$LOCALIZE[31079]</property>
 				<thumb>thumbs/tvshow_portrait.jpg</thumb>
 				<property name="ShowThumb">thumbs/tvshow_portrait.jpg</property>
-				<property name="Fanart">special://skin/backgrounds/tvshows.jpg</property>
+				<property name="Fanart">backgrounds/tvshows.jpg</property>
 				<property name="Latest1">$INFO[Window(Home).Property(RandomEpisode.1.Art(tvshow.poster))]</property>
 				<property name="Latest2">$INFO[Window(Home).Property(RandomEpisode.2.Art(tvshow.poster))]</property>
 				<property name="Latest3">$INFO[Window(Home).Property(RandomEpisode.3.Art(tvshow.poster))]</property>
@@ -147,7 +147,7 @@
 				<property name="Node">$LOCALIZE[31081]</property>
 				<thumb>thumbs/tvshow_portrait.jpg</thumb>
 				<property name="ShowThumb">thumbs/tvshow_portrait.jpg</property>
-				<property name="Fanart">special://skin/backgrounds/tvshows.jpg</property>
+				<property name="Fanart">backgrounds/tvshows.jpg</property>
 				<property name="Latest1">$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.poster))]</property>
 				<property name="Latest2">$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.poster))]</property>
 				<property name="Latest3">$INFO[Window(Home).Property(RecentEpisode.3.Art(tvshow.poster))]</property>
