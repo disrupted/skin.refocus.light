@@ -87,57 +87,57 @@
 		<!-- videos fanart --->
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/movies.jpg">$INFO[Container(8000).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/movies.jpg">$INFO[Container(8000).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8000) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/movies.jpg">$INFO[Container(80081).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/movies.jpg">$INFO[Container(80081).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(80081) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/movies.jpg">$INFO[Container(80091).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/movies.jpg">$INFO[Container(80091).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(80091) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>
 		<!-- movies fanart --->
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/movies.jpg">$INFO[Container(8000).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/movies.jpg">$INFO[Container(8000).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8000) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/movies.jpg">$INFO[Container(8006).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/movies.jpg">$INFO[Container(8006).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8006) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/movies.jpg">$INFO[Container(8007).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/movies.jpg">$INFO[Container(8007).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8007) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>
 		<!-- tvshows fanart --->
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/tvshows.jpg">$INFO[Container(8001).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/tvshows.jpg">$INFO[Container(8001).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8001) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/tvshows.jpg">$INFO[Container(8008).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/tvshows.jpg">$INFO[Container(8008).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8008) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/tvshows.jpg">$INFO[Container(8009).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/tvshows.jpg">$INFO[Container(8009).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8009) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>
@@ -146,7 +146,7 @@
 		<!-- music fanart --->
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/music.jpg">$INFO[Container(8002).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/music.jpg">$INFO[Container(8002).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8002) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>
@@ -155,7 +155,7 @@
 		<!-- addons fanart --->
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture background="true" fallback="special://skin/backgrounds/addons.jpg">$INFO[Container(8005).ListItem.Property(Fanart)]</texture>
+			<texture background="true" fallback="backgrounds/addons.jpg">$INFO[Container(8005).ListItem.Property(Fanart)]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8005) + !Skin.HasSetting(home.widgets.nofanart)</visible>
 		</control>

@@ -38,7 +38,7 @@
 		</control>
 		<control type="image">
 			<include>screen_Dimensions</include>
-			<texture fallback="special://skin/backgrounds/music.jpg">$INFO[Player.Art(fanart)]</texture>
+			<texture fallback="backgrounds/music.jpg">$INFO[Player.Art(fanart)]</texture>
 			<animation effect="fade" start="100" end="80" time="0" condition="Skin.HasSetting(fanart.visualization.blend)">Conditional</animation>
 			<!-- <visible>!Visualisation.Enabled</visible> -->
 		</control>
