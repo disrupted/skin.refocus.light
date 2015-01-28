@@ -135,9 +135,7 @@
 		<value>$INFO[ListItem.Art(landscape)]</value>
 	</variable>
 	<variable name="thumb_Portrait.Condition">
-		<value condition="StringCompare(Container.FolderPath,plugin://plugin.video.the.trailers/)">$INFO[ListItem.Icon]</value>
-		<value condition="IsEmpty(ListItem.Thumb) + [Container.Content(movies) | Container.Content(sets)]">thumbs/movie_portrait.jpg</value>
-		<value condition="IsEmpty(ListItem.Thumb) + [Container.Content(tvshows) | Container.Content(seasons)]">thumbs/tvshow_portrait.jpg</value>
+		<value condition="IsEmpty(ListItem.Thumb) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) | Container.Content(sets)]">thumbs/tvshow_portrait.jpg</value>
 		<value condition="IsEmpty(ListItem.Thumb) + Container.Content(actors)">thumbs/actor_portrait.jpg</value>
 		<value>$INFO[ListItem.Thumb]</value>
 	</variable>
