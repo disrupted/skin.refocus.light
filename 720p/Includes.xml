@@ -627,14 +627,14 @@
 	<include name="frame_Poster-List">
 		<width>452</width>
 		<height>646</height>
-		<texture background="true" border="31">frames/frame_Square.png</texture>
+		<texture background="true" border="31">frames/frame_Square_clear.png</texture>
 		<aspectratio align="center">stretch</aspectratio>
 		<fadetime>fadetime_Thumb</fadetime>
 	</include>
 	<include name="frame_Landscape-List">
 		<width>587</width>
 		<height>349</height>
-		<texture background="true" border="31">frames/frame_Square.png</texture>
+		<texture background="true" border="31">frames/frame_Square_clear.png</texture>
 		<aspectratio align="center">stretch</aspectratio>
 		<fadetime>fadetime_Thumb</fadetime>
 	</include>
