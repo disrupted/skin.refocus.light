@@ -9,7 +9,7 @@
 		</control>
 	<!---backgrounds------>
 		
-		<control type="multiimage" id="1">
+		<!-- <control type="multiimage" id="1">
 			<include>screen_Dimensions</include>
 			<aspectratio>scale</aspectratio>
 			<imagepath background="true">$INFO[Skin.String(fanart.weather.path)]/$INFO[Weather.FanartCode]</imagepath>
@@ -19,7 +19,7 @@
 			<loop>yes</loop>
 			<include>transition_Container</include>
 			<visible>Skin.HasSetting(fanart.weather)</visible>
-		</control>
+		</control> -->
 		<include>global_Background</include>
 		
 		<control type="image">
