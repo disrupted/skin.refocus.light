@@ -63,7 +63,7 @@
     </action>
     <action>
       <name>screenshot</name>
-      <file>shutter.wav</file>
+      <file>Shutter.wav</file>
     </action>
   </actions>
 
@@ -71,7 +71,6 @@
     <window>
       <name>infodialog</name>
       <activate>Notify.wav</activate>
-      <deactivate>out.wav</deactivate>
     </window>
   </windows>
 </sounds>
