@@ -74,7 +74,7 @@
 			<include>transition_Container</include>
 			<include>infoDialogHide</include>
 			<include>toggle_Menu</include>
-			<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + [SubString(Container.FolderPath,videodb) | SubString(Container.FolderPath,plugin://) | SubString(Container.FolderPath,special://profile/playlists/video/) | SubString(Container.FolderPath,special://skin/playlists)]</visible>
+			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<itemlayout height="280" width="400">
 				<control type="image">
 					<width>390</width>
@@ -83,7 +83,6 @@
 					<bordertexture border="40">frames/frame_Square_clear.png</bordertexture>
 					<bordersize>22</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 				</control>
 				<control type="label">
 					<posx>25</posx>
@@ -113,7 +112,6 @@
 					<texture background="true">$VAR[thumb_Landscape.Condition]</texture>
 					<bordersize>22</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 				</control>
 				<control type="label">
 					<posx>25</posx>
