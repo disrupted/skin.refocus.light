@@ -489,7 +489,7 @@
 					<aspectratio>scale</aspectratio>
 				</control>
 				<control type="label">
-					<posx>104</posx>
+					<posx>14</posx>
 					<posy>210</posy>
 					<width>176</width>
 					<label>$INFO[ListItem.Label]</label>
@@ -516,7 +516,7 @@
 					<aspectratio>scale</aspectratio>
 				</control>
 				<control type="label">
-					<posx>104</posx>
+					<posx>14</posx>
 					<posy>210</posy>
 					<width>176</width>
 					<label>$INFO[ListItem.Label]</label>
