@@ -83,7 +83,7 @@
 					<bordertexture border="40">frames/frame_Square_clear.png</bordertexture>
 					<bordersize>22</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<visible>Container.Content(movies) | SubString(Container.FolderPath,plugin://plugin.video.xbmcflicks) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 				</control>
 				<control type="label">
 					<posx>25</posx>
@@ -113,7 +113,7 @@
 					<texture background="true">$VAR[thumb_Portrait.Wide]</texture>
 					<bordersize>22</bordersize>
 					<aspectratio align="center">scale</aspectratio>
-					<visible>Container.Content(movies) | SubString(Container.FolderPath,plugin://plugin.video.xbmcflicks) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 				</control>
 				<control type="label">
 					<posx>25</posx>
